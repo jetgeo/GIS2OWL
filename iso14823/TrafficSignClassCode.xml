@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+	xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss"
+	xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="WarningSignTypeCode"
+	xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+	<gml:description>Specifies the available list of enumerations for traffic sign types, defined in accordance with ISO 14823</gml:description>
+	<gml:identifier codeSpace="https://raw.githubusercontent.com/jetgeo/GIS2OWL/">TrafficSignClassCode</gml:identifier>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd11">
+			<gml:description>Danger warning sign</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/jetgeo/GIS2OWL/TrafficSignClassCode">warningSign</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd12">
+			<gml:description>Regulatory sign</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/jetgeo/GIS2OWL/TrafficSignClassCode">regolatorySign</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd13">
+			<gml:description>Informative sign</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/jetgeo/GIS2OWL/TrafficSignClassCode">informativeSign</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd21">
+			<gml:description>Public facilities</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/jetgeo/GIS2OWL/TrafficSignClassCode">publicFacilities</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd31">
+			<gml:description>Ambient road conditions</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/jetgeo/GIS2OWL/TrafficSignClassCode">ambientRoadCondition</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+	<gml:dictionaryEntry>
+		<gml:Definition gml:id="gdd41">
+			<gml:description>Road condition</gml:description>
+			<gml:identifier codeSpace="https://raw.githubusercontent.com/jetgeo/GIS2OWL/TrafficSignClassCode">roadCondition</gml:identifier>
+		</gml:Definition>
+	</gml:dictionaryEntry>
+</gml:Dictionary>
