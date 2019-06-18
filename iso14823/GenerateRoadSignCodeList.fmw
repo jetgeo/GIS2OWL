@@ -1,0 +1,1841 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command-line to run this workspace:
+#        "C:\Program Files\FME\fme.exe" C:\DATA\GitHub\jetgeo\GIS2OWL\iso14823\GenerateRoadSignCodeList.fmw
+#              --SourceDataset_XLSXR "C:\DATA\GitHub\vegvesen\TN-ITS\UML (EA)\TS14823-Pictgram-catalogue-21_July.xlsx"
+#              --DestDataset_TEXTLINE "C:\DATA\GitHub\jetgeo\GIS2OWL\iso14823"
+#    
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="5280.39 1341.78"
+#!   DOC_TOP_LEFT="-310.004 -1144.28"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="18586"
+#!   FME_DOCUMENT_GUID="f05a36cf-5ae8-44cb-b5bf-2645e782cbb0"
+#!   FME_DOCUMENT_PRIORGUID="0502fdcb-4be0-43ab-88b7-ca58edb0a8eb,05a615ce-6b74-4bd4-bd5f-0c447d221fc1"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2018.1.1.2 (20190121 - Build 18586 - WIN64)"
+#!   LAST_SAVE_DATE="2019-06-18T13:25:08"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="27"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="199.221 191.408"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="64"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="XLSXR"
+#!   DATASET="$(SourceDataset_XLSXR)"
+#!   KEYWORD="XLSXR_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="xlsx_start_row &quot;&quot; xlsx_end_row &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="multi_reader_type char(50) fme_sweep_angle number(31,15) fme_text_size number(31,15) fme_type char(50) fme_start_angle number(31,15) multi_reader_id number(11,0) fme_basename char(50) fme_feature_type char(50) fme_fill_color char(50) multi_reader_keyword char(50) fme_dataset char(50) fme_text_string char(50) fme_primary_axis number(31,15) multi_reader_full_id number(11,0) fme_rotation number(31,15) fme_secondary_axis number(31,15) xlsx_row_id number(11,0) fme_color char(50) fme_geometry fme_char(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP xlsx_table_settings_group xlsx_start_row%xlsx_end_row Table&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_start_row Start Row:&quot; &quot;&quot; &quot;GUI FORCE_DEFS OPTIONAL INTEGER xlsx_end_row End Row:&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   GENERATE_FME_BUILD_NUM="17652"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="XLSXR_IN_READ_BLANK_AS XLSXR_IN_EXPAND_MERGED_CELLS XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ALLOW_DATASET_CONFLICT"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="xlsx file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Sheet"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="application/vnd.ms-excel ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Excel file(s)"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="TEXTLINE"
+#!   DATASET="$(DestDataset_TEXTLINE)"
+#!   KEYWORD="TEXTLINE_1"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="60"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES="text_line"
+#!   WRITE_DEFS="false"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_color char(50) fme_text_string char(50) fme_text_size number(31,15) fme_fill_color char(50) fme_geometry fme_char(50) fme_sweep_angle number(31,15) fme_basename char(50) text_line_eol char(10) fme_feature_type char(50) fme_dataset char(50) fme_primary_axis number(31,15) fme_rotation number(31,15) fme_type char(50) fme_secondary_axis number(31,15) fme_start_angle number(31,15)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="false"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   GENERATE_FME_BUILD_NUM="17652"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION="&lt;at&gt;Value&lt;openparen&gt;fme_feature_type&lt;closeparen&gt;.rdf"
+#!   FANOUT_GROUP="YES"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="txt file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="text_line"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="text/plain"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Text file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the Text file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_FEATURE_TYPE_EDITING"
+#!   VALUE="NO"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="x_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="y_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="z_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="XLSXR"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="buffer"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="TEXTLINE"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xlsx_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="XLSXR"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="TEXTLINE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="text_line_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="TEXTLINE"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Ambient   Road Condition (31)"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="xlsx_none"
+#!   POSITION="-310.00400000000002 -138.49600000000001"
+#!   BOUNDING_RECT="-310.00400000000002 -138.49600000000001 -1 -1"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="XLSXR_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Traffic sign for " ATTR_TYPE="char(42)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="service Category" ATTR_TYPE="number(3,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Pictogram Category" ATTR_TYPE="number(4,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Related attributes" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="U.N./Vienna" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Germany" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="France" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="UK" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Italy" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Spain" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Netherlands" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Belgium" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Switzerland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Austria" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Ireland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Poland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Sweden" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Finland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Norway" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Greece" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Czech Rep" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Slovakia" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Russia &amp; Belarus" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="U.S." ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Request by NL" ATTR_TYPE="char(2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Request by AT" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Request by DE" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="South Korea" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Japan" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AD" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AE" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AF" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AG" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AH" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AI" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AJ" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AK" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AL" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AM" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AN" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <NON_GUI_DEFLINE_PARM VALUE="xlsx_schema_start_row,2;xlsx_schema_end_col,0;xlsx_header_row,1;xlsx_schema_start_col,0;xlsx_schema_end_row,0"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_end_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_table_settings_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Public Facilities (21)"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="3"
+#!   FEAT_GEOMTYPE="xlsx_none"
+#!   POSITION="-310.00400000000002 -276.49599999999998"
+#!   BOUNDING_RECT="-310.00400000000002 -276.49599999999998 -1 -1"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="XLSXR_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Traffic sign for " ATTR_TYPE="char(38)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="service Category" ATTR_TYPE="number(3,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Pictogram Category" ATTR_TYPE="number(4,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Related attributes" ATTR_TYPE="char(21)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="U.N./Vienna" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Germany" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="France" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="UK" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Italy" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Spain" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Netherlands" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Belgium" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Switzerland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Austria" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Ireland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Poland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Sweden" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Finland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Norway" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Greece" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Czech Rep" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Slovakia" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Russia &amp; Belarus" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="U.S." ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="South Korea" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Japan" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <NON_GUI_DEFLINE_PARM VALUE="xlsx_schema_start_row,2;xlsx_schema_end_col,0;xlsx_header_row,1;xlsx_schema_start_col,0;xlsx_schema_end_row,0"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_end_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_table_settings_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Guide(13)"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="4"
+#!   FEAT_GEOMTYPE="xlsx_none"
+#!   POSITION="-310.00400000000002 -0.49632500000000002"
+#!   BOUNDING_RECT="-310.00400000000002 -0.49632500000000002 -1 -1"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="XLSXR_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="false"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Traffic sign for " ATTR_TYPE="char(70)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="service Category" ATTR_TYPE="number(3,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Pictogram Category" ATTR_TYPE="number(4,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Related attributes" ATTR_TYPE="char(118)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="U.N./Vienna" ATTR_TYPE="char(8)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Germany" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="France" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="UK" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Italy" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Spain" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Netherlands" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Belgium" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Switzerland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Austria" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Ireland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Poland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Sweden" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Finland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Norway" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Greece" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Czech Rep" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Slovakia" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Russia &amp; Belarus" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="U.S." ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="South Korea" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Japan" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AA" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AB" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AC" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <NON_GUI_DEFLINE_PARM VALUE="xlsx_schema_start_row,2;xlsx_schema_end_col,0;xlsx_header_row,1;xlsx_schema_start_col,0;xlsx_schema_end_row,0"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_end_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_table_settings_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Regulatory(12)"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="5"
+#!   FEAT_GEOMTYPE="xlsx_none"
+#!   POSITION="-310.00400000000002 137.50399999999999"
+#!   BOUNDING_RECT="-310.00400000000002 137.50399999999999 -1 -1"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="XLSXR_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Traffic sign for " ATTR_TYPE="char(135)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="service Category" ATTR_TYPE="number(3,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Pictogram Category" ATTR_TYPE="number(4,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Pictogram Category00" ATTR_TYPE="number(4,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Related attributes" ATTR_TYPE="char(167)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="U.N./Vienna" ATTR_TYPE="char(9)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Germany" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="France" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="UK" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Italy" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Spain" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Netherlands" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Belgium" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Switzerland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Austria" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Ireland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Poland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Sweden" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Finland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Norway" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Greece" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Czech Rep" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Slovakia" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Russia &amp; Belarus" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="U.S." ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="South Korea" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Japan" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <NON_GUI_DEFLINE_PARM VALUE="xlsx_schema_start_row,2;xlsx_schema_end_col,0;xlsx_header_row,1;xlsx_schema_start_col,0;xlsx_schema_end_row,0"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_end_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_table_settings_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Warning (11)"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="6"
+#!   FEAT_GEOMTYPE="xlsx_none"
+#!   POSITION="-310.00400000000002 -414.49599999999998"
+#!   BOUNDING_RECT="-310.00400000000002 -414.49599999999998 -1 -1"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="XLSXR_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Traffic sign for " ATTR_TYPE="char(101)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="service Category" ATTR_TYPE="number(3,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Pictogram Category" ATTR_TYPE="number(4,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Pictogram Category00" ATTR_TYPE="number(4,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Related attributes" ATTR_TYPE="char(31)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="U.N./Vienna" ATTR_TYPE="char(18)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Germany" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="France" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="UK" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Italy" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Spain" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Netherlands" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Belgium" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Switzerland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Austria" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Ireland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Poland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Sweden" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Finland" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Norway" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Greece" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Czech Rep" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Slovakia" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Russia &amp; Belarus" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="U.S." ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="South Korea" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Japan" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AB" ATTR_TYPE="string" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <NON_GUI_DEFLINE_PARM VALUE="xlsx_schema_start_row,2;xlsx_schema_end_col,0;xlsx_header_row,1;xlsx_schema_start_col,0;xlsx_schema_end_row,0"/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_end_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="xlsx_table_settings_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="text_line"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="37"
+#!   FEAT_GEOMTYPE="text_line_none"
+#!   POSITION="4970.3896486964859 -1144.2780858808592"
+#!   BOUNDING_RECT="4970.3896486964859 -1144.2780858808592 -1 -1"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="false"
+#!   KEYWORD="TEXTLINE_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="text_line_data" ATTR_TYPE="buffer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET 
+#!   NAME="XLSXR_1"
+#!   OVERRIDE="-XLSXR_1_DATASET"
+#!   DATASET="XLSXR_1/TS14823-Pictgram-catalogue-21_July.xlsx"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET 
+#!   NAME="TEXTLINE_1"
+#!   OVERRIDE="-TEXTLINE_1_DATASET{*}"
+#!   DATASET="TEXTLINE_1/iso14823"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):"
+#!   DEFAULT_VALUE="C:\DATA\GitHub\vegvesen\TN-ITS\UML (EA)\TS14823-Pictgram-catalogue-21_July.xlsx"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILENAME DestDataset_TEXTLINE Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Destination Text File:"
+#!   DEFAULT_VALUE="C:\DATA\GitHub\jetgeo\GIS2OWL\iso14823"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="20"
+#!   TYPE="DuplicateFilter"
+#!   VERSION="5"
+#!   POSITION="1849.6470312703127 197.50399999999999"
+#!   BOUNDING_RECT="1849.6470312703127 197.50399999999999 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18586"
+#! >
+#!     <OUTPUT_FEAT NAME="UNIQUE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="service Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pictogram Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gddSymbolCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gddClassCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Related attributes" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="DUPLICATE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="service Category" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Pictogram Category" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gddSymbolCode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gddClassCode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Related attributes" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="INPUT_ORDERED_CHOICE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="KEYATTR" PARM_VALUE="gddClassCode"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DuplicateFilter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="41"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="2403.6470312703123 179.00399999999999"
+#!   BOUNDING_RECT="2403.6470312703123 179.00399999999999 -1 -1"
+#!   ORDER="500000000000001"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18586"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DuplicateFilter_Unique"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="43"
+#!   TYPE="AttributeManager"
+#!   VERSION="1"
+#!   POSITION="501.81695311953115 137.50399999999999"
+#!   BOUNDING_RECT="501.81695311953115 137.50399999999999 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18586"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="service Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pictogram Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gddSymbolCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gddClassCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Related attributes" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="Traffic&lt;space&gt;sign&lt;space&gt;for&lt;space&gt; Description  RENAME_SET_VALUE service&lt;space&gt;Category service&lt;space&gt;Category  NO_OP Pictogram&lt;space&gt;Category Pictogram&lt;space&gt;Category  NO_OP Pictogram&lt;space&gt;Category00 Pictogram&lt;space&gt;Category  RENAME_SET_VALUE  gddSymbolCode &lt;at&gt;Value&lt;openparen&gt;service&lt;space&gt;Category&lt;closeparen&gt;-&lt;at&gt;Value&lt;openparen&gt;Pictogram&lt;space&gt;Category&lt;closeparen&gt; SET_TO  gddClassCode &lt;at&gt;Value&lt;openparen&gt;service&lt;space&gt;Category&lt;closeparen&gt; SET_TO Related&lt;space&gt;attributes Related&lt;space&gt;attributes  NO_OP U.N.&lt;solidus&gt;Vienna U.N.&lt;solidus&gt;Vienna  REMOVE Germany Germany  REMOVE France France  REMOVE UK UK  REMOVE Italy Italy  REMOVE Spain Spain  REMOVE Netherlands Netherlands  REMOVE Belgium Belgium  REMOVE Switzerland Switzerland  REMOVE Austria Austria  REMOVE Ireland Ireland  REMOVE Poland Poland  REMOVE Sweden Sweden  REMOVE Finland Finland  REMOVE Norway Norway  REMOVE Greece Greece  REMOVE Czech&lt;space&gt;Rep Czech&lt;space&gt;Rep  REMOVE Slovakia Slovakia  REMOVE Russia&lt;space&gt;&lt;amp&gt;&lt;space&gt;Belarus Russia&lt;space&gt;&lt;amp&gt;&lt;space&gt;Belarus  REMOVE U.S. U.S.  REMOVE South&lt;space&gt;Korea South&lt;space&gt;Korea  REMOVE Japan Japan  REMOVE AA AA  REMOVE AB AB  REMOVE AC AC  REMOVE Request&lt;space&gt;by&lt;space&gt;NL Request&lt;space&gt;by&lt;space&gt;NL  REMOVE Request&lt;space&gt;by&lt;space&gt;AT Request&lt;space&gt;by&lt;space&gt;AT  REMOVE Request&lt;space&gt;by&lt;space&gt;DE Request&lt;space&gt;by&lt;space&gt;DE  REMOVE AD AD  REMOVE AE AE  REMOVE AF AF  REMOVE AG AG  REMOVE AH AH  REMOVE AI AI  REMOVE AJ AJ  REMOVE AK AK  REMOVE AL AL  REMOVE AM AM  REMOVE AN AN  REMOVE"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_4"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="50"
+#!   TYPE="TestFilter"
+#!   VERSION="1"
+#!   POSITION="1119.947109371094 119.503675"
+#!   BOUNDING_RECT="1119.947109371094 119.503675 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="HasValue"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="service Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pictogram Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gddSymbolCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gddClassCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Related attributes" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="service Category" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Pictogram Category" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gddSymbolCode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="gddClassCode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Related attributes" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TESTLISTGRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE="BOOL_OP&lt;comma&gt;AND&lt;comma&gt;COMPOSITE_TEST&lt;comma&gt;&lt;lt&gt;Unused&lt;gt&gt;&lt;comma&gt;TEST_CLAUSE&lt;comma&gt;&lt;quote&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;Pictogram&lt;lt&gt;space&lt;gt&gt;Category&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;ATTRIBUTE_HAS_VALUE&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;lf&gt;TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;service&lt;lt&gt;space&lt;gt&gt;Category&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;ATTRIBUTE_HAS_VALUE&lt;space&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;&lt;quote&gt;,HasValue"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TestFilter_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="45"
+#!   TYPE="AttributeManager"
+#!   VERSION="1"
+#!   POSITION="3058.5651954519558 -154.68892184921842"
+#!   BOUNDING_RECT="3058.5651954519558 -154.68892184921842 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18586"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gddCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="service Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pictogram Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Related attributes" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="xml" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="Description Description  NO_OP gddCode gddCode  NO_OP service&lt;space&gt;Category service&lt;space&gt;Category  NO_OP Pictogram&lt;space&gt;Category Pictogram&lt;space&gt;Category  NO_OP Related&lt;space&gt;attributes Related&lt;space&gt;attributes  NO_OP  xml &lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;skos:Concept&lt;space&gt;rdf:about=&lt;quote&gt;https:&lt;solidus&gt;&lt;solidus&gt;raw.githubusercontent.com&lt;solidus&gt;jetgeo&lt;solidus&gt;GIS2OWL&lt;solidus&gt;_&lt;at&gt;Value&lt;openparen&gt;gddCode&lt;closeparen&gt;&lt;quote&gt;&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;skos:inScheme&lt;space&gt;rdf:resource=&lt;quote&gt;https:&lt;solidus&gt;&lt;solidus&gt;raw.githubusercontent.com&lt;solidus&gt;jetgeo&lt;solidus&gt;GIS2OWL&lt;solidus&gt;_&lt;at&gt;Value&lt;openparen&gt;gddCode&lt;closeparen&gt;&lt;quote&gt;&lt;solidus&gt;&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;skos:prefLabel&lt;space&gt;xml:lang=&lt;quote&gt;en&lt;quote&gt;&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;Description&lt;closeparen&gt;&lt;lt&gt;&lt;solidus&gt;skos:prefLabel&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;skos:definition&lt;space&gt;xml:lang=&lt;quote&gt;en&lt;quote&gt;&lt;gt&gt;&lt;at&gt;Value&lt;openparen&gt;Description&lt;closeparen&gt;&lt;lt&gt;&lt;solidus&gt;skos:definition&lt;gt&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;lt&gt;&lt;solidus&gt;skos:Concept&lt;gt&gt;&lt;lf&gt; SET_TO fme_feature_type fme_feature_type  NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_5"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="53"
+#!   TYPE="AttributeManager"
+#!   VERSION="2"
+#!   POSITION="2464.1162109621091 -14.715817194921936"
+#!   BOUNDING_RECT="2464.1162109621091 -14.715817194921936 -1 -1"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18586"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="service Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pictogram Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gddCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Related attributes" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="Description Description  REMOVE service&lt;space&gt;Category service&lt;space&gt;Category  NO_OP Pictogram&lt;space&gt;Category Pictogram&lt;space&gt;Category  NO_OP gddSymbolCode gddSymbolCode  REMOVE gddClassCode gddCode  RENAME_SET_VALUE Related&lt;space&gt;attributes Related&lt;space&gt;attributes  NO_OP  fme_feature_type TrafficSignClassCode SET_TO"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_6"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="55"
+#!   TYPE="AttributeManager"
+#!   VERSION="2"
+#!   POSITION="2464.1162109621091 -232.68624689921893"
+#!   BOUNDING_RECT="2464.1162109621091 -232.68624689921893 -1 -1"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18586"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="service Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Pictogram Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="gddCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Related attributes" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="Description Description  NO_OP service&lt;space&gt;Category service&lt;space&gt;Category  NO_OP Pictogram&lt;space&gt;Category Pictogram&lt;space&gt;Category  NO_OP gddSymbolCode gddCode  RENAME_SET_VALUE gddClassCode gddClassCode  REMOVE Related&lt;space&gt;attributes Related&lt;space&gt;attributes  NO_OP  fme_feature_type TrafficSignSymbolCode SET_TO"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_7"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="58"
+#!   TYPE="ListBuilder"
+#!   VERSION="2"
+#!   POSITION="3058.5651954519558 -401.00137494374951"
+#!   BOUNDING_RECT="3058.5651954519558 -401.00137494374951 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18586"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.Description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.gddCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.service Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.Pictogram Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.Related attributes" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.xml" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="GROUPS_ORDERED" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="fme_feature_type"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="Description gddCode Pictogram&lt;space&gt;Category Related&lt;space&gt;attributes service&lt;space&gt;Category xml"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="Selected Attributes"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="_list"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ListBuilder_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="60"
+#!   TYPE="XMLTemplater"
+#!   VERSION="3"
+#!   POSITION="3544.5941407414075 -401.00137494374951"
+#!   BOUNDING_RECT="3544.5941407414075 -401.00137494374951 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18586"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.Description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.gddCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.service Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.Pictogram Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.Related attributes" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.xml" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_result" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CONSECUTIVE_GROUPS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="DYNGROUP_0" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GEO_TABLE_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OUTPUT_XML_HEADER" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RESULT_ATTRIBUTE" PARM_VALUE="_result"/>
+#!     <XFORM_PARM PARM_NAME="ROOT_QUERY_EXPR" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;UTF-8&lt;quote&gt;?&lt;gt&gt;&lt;lf&gt;&lt;lt&gt;?xml-stylesheet&lt;space&gt;type=&lt;apos&gt;text&lt;solidus&gt;xsl&lt;apos&gt;&lt;space&gt;href=&lt;apos&gt;.&lt;solidus&gt;CodelistDictionary-skosrdfxml.xsl&lt;apos&gt;?&lt;gt&gt;&lt;lf&gt;&lt;lt&gt;rdf:RDF&lt;lf&gt;&lt;space&gt;&lt;space&gt;xmlns:skos=&lt;quote&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;2004&lt;solidus&gt;02&lt;solidus&gt;skos&lt;solidus&gt;core#&lt;quote&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;xmlns:rdf=&lt;quote&gt;http:&lt;solidus&gt;&lt;solidus&gt;www.w3.org&lt;solidus&gt;1999&lt;solidus&gt;02&lt;solidus&gt;22-rdf-syntax-ns#&lt;quote&gt;&lt;gt&gt;&lt;lf&gt;&lt;opencurly&gt;fme:get-list-attribute&lt;openparen&gt;&lt;quote&gt;_list&lt;opencurly&gt;&lt;closecurly&gt;.xml&lt;quote&gt;&lt;closeparen&gt;&lt;closecurly&gt;&lt;lf&gt;&lt;lt&gt;&lt;solidus&gt;rdf:RDF&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ROOT_QUERY_FILE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ROOT_TABLE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SUB_TABLE_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="SUB_TEMPLATE_PARAMS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VISIBLE_QUERY_VALIDATE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="XMLTemplater_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="62"
+#!   TYPE="AttributeManager"
+#!   VERSION="1"
+#!   POSITION="4970.3896486964859 -899.49757807578146"
+#!   BOUNDING_RECT="4970.3896486964859 -899.49757807578146 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="18586"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="text_line_data" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.gddCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.xml" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.Description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.service Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.Pictogram Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.Related attributes" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="_result text_line_data  RENAME_SET_VALUE _list&lt;opencurly&gt;&lt;closecurly&gt;.gddCode _list&lt;opencurly&gt;&lt;closecurly&gt;.gddCode  NO_OP _list&lt;opencurly&gt;&lt;closecurly&gt;.xml _list&lt;opencurly&gt;&lt;closecurly&gt;.xml  NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_8"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="64"
+#!   TYPE="StringReplacer"
+#!   VERSION="4"
+#!   POSITION="3798.5029298292984 -685.27808588085918"
+#!   BOUNDING_RECT="3798.5029298292984 -685.27808588085918 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.Description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.gddCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.service Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.Pictogram Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.Related attributes" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.xml" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_result" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CASE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="FIND_TEXT" PARM_VALUE="&lt;amp&gt;gt&lt;semicolon&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH" PARM_VALUE="_FME_NO_OP_"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REGEXP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_TEXT" PARM_VALUE="&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="_result"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringReplacer_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="63"
+#!   TYPE="StringReplacer"
+#!   VERSION="4"
+#!   POSITION="4239.9135939359385 -802.4667577675782"
+#!   BOUNDING_RECT="4239.9135939359385 -802.4667577675782 -1 -1"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17652"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.Description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.gddCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.service Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.Pictogram Category" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.Related attributes" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_list{}.xml" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_result" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CASE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="FIND_TEXT" PARM_VALUE="&lt;amp&gt;gt&lt;semicolon&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH" PARM_VALUE="_FME_NO_OP_"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REGEXP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_TEXT" PARM_VALUE="&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="_result"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringReplacer_5"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="47"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="43"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="48"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="43"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="46"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="43"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="44"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="43"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="49"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="43"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="42"
+#!   SOURCE_NODE="20"
+#!   TARGET_NODE="41"
+#!   SOURCE_PORT_DESC="fo 0 UNIQUE"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="54"
+#!   SOURCE_NODE="20"
+#!   TARGET_NODE="53"
+#!   SOURCE_PORT_DESC="fo 0 UNIQUE"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="51"
+#!   SOURCE_NODE="43"
+#!   TARGET_NODE="50"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="59"
+#!   SOURCE_NODE="45"
+#!   TARGET_NODE="58"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="31"
+#!   SOURCE_NODE="50"
+#!   TARGET_NODE="20"
+#!   SOURCE_PORT_DESC="fo 0 HasValue"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="56"
+#!   SOURCE_NODE="50"
+#!   TARGET_NODE="55"
+#!   SOURCE_PORT_DESC="fo 0 HasValue"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="52"
+#!   SOURCE_NODE="53"
+#!   TARGET_NODE="45"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="57"
+#!   SOURCE_NODE="55"
+#!   TARGET_NODE="45"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="61"
+#!   SOURCE_NODE="58"
+#!   TARGET_NODE="60"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 ROOT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="65"
+#!   SOURCE_NODE="60"
+#!   TARGET_NODE="64"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="40"
+#!   SOURCE_NODE="62"
+#!   TARGET_NODE="37"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="68"
+#!   SOURCE_NODE="63"
+#!   TARGET_NODE="62"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="67"
+#!   SOURCE_NODE="64"
+#!   TARGET_NODE="63"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 27
+GUI IGNORE SourceDataset_XLSXR_1,XLSXR_IN_ADVANCED_XLSXR_1,XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1,XLSXR_IN_READ_BLANK_AS_XLSXR_1,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1,XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1,DestDataset_TEXTLINE_1,TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_1,TEXTLINE_OUT_END_OF_LINE_TEXTLINE_1,TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_1,TEXTLINE_OUT_ENCODING_TEXTLINE_1,TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_1,TEXTLINE_OUT_MIME_TYPE_TEXTLINE_1
+DEFAULT_MACRO SourceDataset_XLSXR C:\DATA\GitHub\vegvesen\TN-ITS\UML (EA)\TS14823-Pictgram-catalogue-21_July.xlsx
+GUI MULTIFILE SourceDataset_XLSXR Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
+DEFAULT_MACRO DestDataset_TEXTLINE C:\DATA\GitHub\jetgeo\GIS2OWL\iso14823
+GUI FILENAME DestDataset_TEXTLINE Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Destination Text File:
+INCLUDE [ if {{$(SourceDataset_XLSXR)} == {}} { puts_real {Parameter 'SourceDataset_XLSXR' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_TEXTLINE)} == {}} { puts_real {Parameter 'DestDataset_TEXTLINE' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} XLSXR
+MULTI_READER_KEYWORD{0} XLSXR_1
+MULTI_READER_GEN_DIRECTIVES{0} CONFIGURATION_DATASET,C:<solidus>DATA<solidus>GitHub<solidus>TN-ITS<solidus>UML<space><openparen>EA<closeparen><solidus>TS14823-Pictgram-catalogue-21_July.xlsx,EXPOSE_ATTRS_GROUP,,_MERGE_SCHEMAS,YES,TABLELIST,<quote>Warning<space><openparen>11<closeparen><quote><space>Regulatory<openparen>12<closeparen><space>Guide<openparen>13<closeparen><space><quote>Public<space>Facilities<space><openparen>21<closeparen><quote><space><quote>Ambient<space><space><space>Road<space>Condition<space><openparen>31<closeparen><quote>,SCHEMA,Warning<lt>space<gt><lt>openparen<gt>11<lt>closeparen<gt><comma>0<lt>comma<gt><lt>quote<gt>Traffic<lt>space<gt>sign<lt>space<gt>for<lt>space<gt><lt>quote<gt><lt>comma<gt>char<lt>comma<gt>101<lt>comma<gt><lt>comma<gt><lt>comma<gt>1<lt>comma<gt><lt>quote<gt>service<lt>space<gt>Category<lt>quote<gt><lt>comma<gt>number<lt>comma<gt>3<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>2<lt>comma<gt><lt>quote<gt>Pictogram<lt>space<gt>Category<lt>quote<gt><lt>comma<gt>number<lt>comma<gt>4<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>3<lt>comma<gt><lt>quote<gt>Pictogram<lt>space<gt>Category00<lt>quote<gt><lt>comma<gt>number<lt>comma<gt>4<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>4<lt>comma<gt><lt>quote<gt>Related<lt>space<gt>attributes<lt>quote<gt><lt>comma<gt>char<lt>comma<gt>31<lt>comma<gt><lt>comma<gt><lt>comma<gt>5<lt>comma<gt>U.N.<lt>solidus<gt>Vienna<lt>comma<gt>char<lt>comma<gt>18<lt>comma<gt><lt>comma<gt><lt>comma<gt>6<lt>comma<gt>Germany<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>7<lt>comma<gt>France<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>8<lt>comma<gt>UK<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>9<lt>comma<gt>Italy<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>10<lt>comma<gt>Spain<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>11<lt>comma<gt>Netherlands<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>12<lt>comma<gt>Belgium<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>13<lt>comma<gt>Switzerland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>14<lt>comma<gt>Austria<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>15<lt>comma<gt>Ireland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>16<lt>comma<gt>Poland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>17<lt>comma<gt>Sweden<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>18<lt>comma<gt>Finland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>19<lt>comma<gt>Norway<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>20<lt>comma<gt>Greece<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>21<lt>comma<gt><lt>quote<gt>Czech<lt>space<gt>Rep<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>22<lt>comma<gt>Slovakia<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>23<lt>comma<gt><lt>quote<gt>Russia<lt>space<gt><lt>amp<gt><lt>space<gt>Belarus<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>24<lt>comma<gt>U.S.<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>25<lt>comma<gt><lt>quote<gt>South<lt>space<gt>Korea<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>26<lt>comma<gt>Japan<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>27<lt>comma<gt>AB<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>2<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>NO<lt>comma<gt>NO<lt>comma<gt>2<lt>comma<gt><lt>quote<gt>C:<lt>solidus<gt>DATA<lt>solidus<gt>GitHub<lt>solidus<gt>TN-ITS<lt>solidus<gt>UML<lt>space<gt><lt>openparen<gt>EA<lt>closeparen<gt><lt>solidus<gt>TS14823-Pictgram-catalogue-21_July.xlsx<lt>quote<gt><lt>comma<gt><lt>quote<gt>0<lt>comma<gt>0<lt>comma<gt>27<lt>comma<gt>910<lt>quote<gt><lt>comma<gt><lt>comma<gt>NO<comma>Regulatory<lt>openparen<gt>12<lt>closeparen<gt><comma>0<lt>comma<gt><lt>quote<gt>Traffic<lt>space<gt>sign<lt>space<gt>for<lt>space<gt><lt>quote<gt><lt>comma<gt>char<lt>comma<gt>135<lt>comma<gt><lt>comma<gt><lt>comma<gt>1<lt>comma<gt><lt>quote<gt>service<lt>space<gt>Category<lt>quote<gt><lt>comma<gt>number<lt>comma<gt>3<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>2<lt>comma<gt><lt>quote<gt>Pictogram<lt>space<gt>Category<lt>quote<gt><lt>comma<gt>number<lt>comma<gt>4<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>3<lt>comma<gt><lt>quote<gt>Pictogram<lt>space<gt>Category00<lt>quote<gt><lt>comma<gt>number<lt>comma<gt>4<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>4<lt>comma<gt><lt>quote<gt>Related<lt>space<gt>attributes<lt>quote<gt><lt>comma<gt>char<lt>comma<gt>167<lt>comma<gt><lt>comma<gt><lt>comma<gt>5<lt>comma<gt>U.N.<lt>solidus<gt>Vienna<lt>comma<gt>char<lt>comma<gt>9<lt>comma<gt><lt>comma<gt><lt>comma<gt>6<lt>comma<gt>Germany<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>7<lt>comma<gt>France<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>8<lt>comma<gt>UK<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>9<lt>comma<gt>Italy<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>10<lt>comma<gt>Spain<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>11<lt>comma<gt>Netherlands<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>12<lt>comma<gt>Belgium<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>13<lt>comma<gt>Switzerland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>14<lt>comma<gt>Austria<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>15<lt>comma<gt>Ireland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>16<lt>comma<gt>Poland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>17<lt>comma<gt>Sweden<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>18<lt>comma<gt>Finland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>19<lt>comma<gt>Norway<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>20<lt>comma<gt>Greece<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>21<lt>comma<gt><lt>quote<gt>Czech<lt>space<gt>Rep<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>22<lt>comma<gt>Slovakia<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>23<lt>comma<gt><lt>quote<gt>Russia<lt>space<gt><lt>amp<gt><lt>space<gt>Belarus<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>24<lt>comma<gt>U.S.<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>25<lt>comma<gt><lt>quote<gt>South<lt>space<gt>Korea<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>26<lt>comma<gt>Japan<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>2<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>NO<lt>comma<gt>NO<lt>comma<gt>2<lt>comma<gt><lt>comma<gt><lt>quote<gt>0<lt>comma<gt>0<lt>comma<gt>26<lt>comma<gt>136<lt>quote<gt><lt>comma<gt><lt>comma<gt>NO<comma>Guide<lt>openparen<gt>13<lt>closeparen<gt><comma>0<lt>comma<gt><lt>quote<gt>Traffic<lt>space<gt>sign<lt>space<gt>for<lt>space<gt><lt>quote<gt><lt>comma<gt>char<lt>comma<gt>70<lt>comma<gt><lt>comma<gt><lt>comma<gt>1<lt>comma<gt><lt>quote<gt>service<lt>space<gt>Category<lt>quote<gt><lt>comma<gt>number<lt>comma<gt>3<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>2<lt>comma<gt><lt>quote<gt>Pictogram<lt>space<gt>Category<lt>quote<gt><lt>comma<gt>number<lt>comma<gt>4<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>3<lt>comma<gt><lt>quote<gt>Related<lt>space<gt>attributes<lt>quote<gt><lt>comma<gt>char<lt>comma<gt>118<lt>comma<gt><lt>comma<gt><lt>comma<gt>4<lt>comma<gt>U.N.<lt>solidus<gt>Vienna<lt>comma<gt>char<lt>comma<gt>8<lt>comma<gt><lt>comma<gt><lt>comma<gt>5<lt>comma<gt>Germany<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>6<lt>comma<gt>France<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>7<lt>comma<gt>UK<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>8<lt>comma<gt>Italy<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>9<lt>comma<gt>Spain<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>10<lt>comma<gt>Netherlands<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>11<lt>comma<gt>Belgium<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>12<lt>comma<gt>Switzerland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>13<lt>comma<gt>Austria<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>14<lt>comma<gt>Ireland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>15<lt>comma<gt>Poland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>16<lt>comma<gt>Sweden<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>17<lt>comma<gt>Finland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>18<lt>comma<gt>Norway<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>19<lt>comma<gt>Greece<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>20<lt>comma<gt><lt>quote<gt>Czech<lt>space<gt>Rep<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>21<lt>comma<gt>Slovakia<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>22<lt>comma<gt><lt>quote<gt>Russia<lt>space<gt><lt>amp<gt><lt>space<gt>Belarus<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>23<lt>comma<gt>U.S.<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>24<lt>comma<gt><lt>quote<gt>South<lt>space<gt>Korea<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>25<lt>comma<gt>Japan<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>26<lt>comma<gt>AA<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>27<lt>comma<gt>AB<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>28<lt>comma<gt>AC<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>2<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>NO<lt>comma<gt>NO<lt>comma<gt>2<lt>comma<gt><lt>comma<gt><lt>quote<gt>0<lt>comma<gt>0<lt>comma<gt>28<lt>comma<gt>142<lt>quote<gt><lt>comma<gt><lt>comma<gt>NO<comma>Public<lt>space<gt>Facilities<lt>space<gt><lt>openparen<gt>21<lt>closeparen<gt><comma>0<lt>comma<gt><lt>quote<gt>Traffic<lt>space<gt>sign<lt>space<gt>for<lt>space<gt><lt>quote<gt><lt>comma<gt>char<lt>comma<gt>38<lt>comma<gt><lt>comma<gt><lt>comma<gt>1<lt>comma<gt><lt>quote<gt>service<lt>space<gt>Category<lt>quote<gt><lt>comma<gt>number<lt>comma<gt>3<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>2<lt>comma<gt><lt>quote<gt>Pictogram<lt>space<gt>Category<lt>quote<gt><lt>comma<gt>number<lt>comma<gt>4<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>3<lt>comma<gt><lt>quote<gt>Related<lt>space<gt>attributes<lt>quote<gt><lt>comma<gt>char<lt>comma<gt>21<lt>comma<gt><lt>comma<gt><lt>comma<gt>4<lt>comma<gt>U.N.<lt>solidus<gt>Vienna<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>5<lt>comma<gt>Germany<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>6<lt>comma<gt>France<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>7<lt>comma<gt>UK<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>8<lt>comma<gt>Italy<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>9<lt>comma<gt>Spain<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>10<lt>comma<gt>Netherlands<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>11<lt>comma<gt>Belgium<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>12<lt>comma<gt>Switzerland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>13<lt>comma<gt>Austria<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>14<lt>comma<gt>Ireland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>15<lt>comma<gt>Poland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>16<lt>comma<gt>Sweden<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>17<lt>comma<gt>Finland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>18<lt>comma<gt>Norway<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>19<lt>comma<gt>Greece<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>20<lt>comma<gt><lt>quote<gt>Czech<lt>space<gt>Rep<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>21<lt>comma<gt>Slovakia<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>22<lt>comma<gt><lt>quote<gt>Russia<lt>space<gt><lt>amp<gt><lt>space<gt>Belarus<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>23<lt>comma<gt>U.S.<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>24<lt>comma<gt><lt>quote<gt>South<lt>space<gt>Korea<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>25<lt>comma<gt>Japan<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>2<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>NO<lt>comma<gt>NO<lt>comma<gt>2<lt>comma<gt><lt>comma<gt><lt>quote<gt>0<lt>comma<gt>0<lt>comma<gt>25<lt>comma<gt>41<lt>quote<gt><lt>comma<gt><lt>comma<gt>NO<comma>Ambient<lt>space<gt><lt>space<gt><lt>space<gt>Road<lt>space<gt>Condition<lt>space<gt><lt>openparen<gt>31<lt>closeparen<gt><comma>0<lt>comma<gt><lt>quote<gt>Traffic<lt>space<gt>sign<lt>space<gt>for<lt>space<gt><lt>quote<gt><lt>comma<gt>char<lt>comma<gt>42<lt>comma<gt><lt>comma<gt><lt>comma<gt>1<lt>comma<gt><lt>quote<gt>service<lt>space<gt>Category<lt>quote<gt><lt>comma<gt>number<lt>comma<gt>3<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>2<lt>comma<gt><lt>quote<gt>Pictogram<lt>space<gt>Category<lt>quote<gt><lt>comma<gt>number<lt>comma<gt>4<lt>comma<gt>0<lt>comma<gt><lt>comma<gt>3<lt>comma<gt><lt>quote<gt>Related<lt>space<gt>attributes<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>4<lt>comma<gt>U.N.<lt>solidus<gt>Vienna<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>5<lt>comma<gt>Germany<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>6<lt>comma<gt>France<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>7<lt>comma<gt>UK<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>8<lt>comma<gt>Italy<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>9<lt>comma<gt>Spain<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>10<lt>comma<gt>Netherlands<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>11<lt>comma<gt>Belgium<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>12<lt>comma<gt>Switzerland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>13<lt>comma<gt>Austria<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>14<lt>comma<gt>Ireland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>15<lt>comma<gt>Poland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>16<lt>comma<gt>Sweden<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>17<lt>comma<gt>Finland<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>18<lt>comma<gt>Norway<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>19<lt>comma<gt>Greece<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>20<lt>comma<gt><lt>quote<gt>Czech<lt>space<gt>Rep<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>21<lt>comma<gt>Slovakia<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>22<lt>comma<gt><lt>quote<gt>Russia<lt>space<gt><lt>amp<gt><lt>space<gt>Belarus<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>23<lt>comma<gt>U.S.<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>24<lt>comma<gt><lt>quote<gt>Request<lt>space<gt>by<lt>space<gt>NL<lt>quote<gt><lt>comma<gt>char<lt>comma<gt>2<lt>comma<gt><lt>comma<gt><lt>comma<gt>25<lt>comma<gt><lt>quote<gt>Request<lt>space<gt>by<lt>space<gt>AT<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>26<lt>comma<gt><lt>quote<gt>Request<lt>space<gt>by<lt>space<gt>DE<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>27<lt>comma<gt><lt>quote<gt>South<lt>space<gt>Korea<lt>quote<gt><lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>28<lt>comma<gt>Japan<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>29<lt>comma<gt>AD<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>30<lt>comma<gt>AE<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>31<lt>comma<gt>AF<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>32<lt>comma<gt>AG<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>33<lt>comma<gt>AH<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>34<lt>comma<gt>AI<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>35<lt>comma<gt>AJ<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>36<lt>comma<gt>AK<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>37<lt>comma<gt>AL<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>38<lt>comma<gt>AM<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><lt>comma<gt>39<lt>comma<gt>AN<lt>comma<gt>string<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>2<lt>comma<gt><lt>comma<gt><lt>comma<gt><comma>NO<lt>comma<gt>NO<lt>comma<gt>2<lt>comma<gt><lt>comma<gt><lt>quote<gt>0<lt>comma<gt>0<lt>comma<gt>39<lt>comma<gt>15<lt>quote<gt><lt>comma<gt><lt>comma<gt>NO,EXCEL_COL_NAMES,YES,ADVANCED,FME_DISCLOSURE_OPEN,EXPAND_MERGED_CELLS,Yes,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,USE_SCHEMA_OTHER_FILES,No,XLSXR_EXPOSE_FORMAT_ATTRS,,SCAN_SCHEMA_IF_DYNAMIC,No,READ_BLANK_AS,Missing,ALLOW_DOLLAR_SIGNS,YES,CASE_SENSITIVE_FEATURE_TYPES,YES,FORCE_DATETIME,NO
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} MULTI_WRITER
+MULTI_WRITER_KEYWORD{0} TEXTLINE_1_FANOUT
+TEXTLINE_1_FANOUT_TYPE{*} TEXTLINE
+TEXTLINE_1_FANOUT_KEYWORD{*} TEXTLINE_1
+TEXTLINE_1_FANOUT_DATASET_ORDER BY_INPUT
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "XLSXR_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER XLSXR XLSXR_1
+# ============================================================================
+# First get the dataset for the database. For Excel, it's the file name.
+# For now we'll use whatever they had when they generated this mapping file,
+# and not reprompt
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_XLSXR_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER XLSXR XLSXR_1
+DEFAULT_MACRO SourceDataset_XLSXR_1 $(SourceDataset_XLSXR)
+GUI MULTIFILE SourceDataset_XLSXR_1 Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):
+#GUI GROUP TABLELIST Constraints
+# TABLELIST is not shown in GUI, but is required for infrastructure
+# to not show the Table List popup
+DEFAULT_MACRO XLSXR_IN_CONFIGURATION_DATASET_XLSXR_1 C:/DATA/GitHub/TN-ITS/UML (EA)/TS14823-Pictgram-catalogue-21_July.xlsx
+XLSXR_1_CONFIGURATION_DATASET "$(XLSXR_IN_CONFIGURATION_DATASET_XLSXR_1)"
+# Flag to switch from old naming scheme of col_1, col_2 etc. to a, b, etc.
+# To better match up with Excel files
+DEFAULT_MACRO XLSXR_IN_EXCEL_COL_NAMES_XLSXR_1 YES
+XLSXR_1_EXCEL_COL_NAMES "$(XLSXR_IN_EXCEL_COL_NAMES_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_FORCE_DATETIME_XLSXR_1 NO
+XLSXR_1_FORCE_DATETIME "$(XLSXR_IN_FORCE_DATETIME_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_ADVANCED_XLSXR_1 
+GUI OPTIONAL DISCLOSUREGROUP XLSXR_IN_ADVANCED_XLSXR_1 XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1%XLSXR_IN_USE_SCHEMA_OTHER_FILES%XLSXR_IN_READ_BLANK_AS_XLSXR_1%XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1 Advanced
+DEFAULT_MACRO XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1 No
+XLSXR_1_SCAN_SCHEMA_IF_DYNAMIC "$(XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1)"
+GUI OPTIONAL CHECKBOX XLSXR_IN_SCAN_SCHEMA_IF_DYNAMIC_XLSXR_1 Yes%No Scan Schema in Dynamic Workflow:
+DEFAULT_MACRO XLSXR_IN_USE_SCHEMA_OTHER_FILES_XLSXR_1 No
+XLSXR_1_USE_SCHEMA_OTHER_FILES "$(XLSXR_IN_USE_SCHEMA_OTHER_FILES_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_READ_BLANK_AS_XLSXR_1 Missing
+XLSXR_1_READ_BLANK_AS "$(XLSXR_IN_READ_BLANK_AS_XLSXR_1)"
+GUI CHOICE XLSXR_IN_READ_BLANK_AS_XLSXR_1 Missing%Null Read blank cells as:
+DEFAULT_MACRO XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1 Yes
+XLSXR_1_EXPAND_MERGED_CELLS "$(XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1)"
+GUI OPTIONAL CHECKBOX XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1 Yes%No Expand Merged Cells:
+DEFAULT_MACRO XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1 
+XLSXR_1_EXPOSE_ATTRS_GROUP "$(XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1)"
+GUI OPTIONAL DISCLOSUREGROUP XLSXR_IN_EXPOSE_ATTRS_GROUP_XLSXR_1 XLSXR_IN_XLSXR_EXPOSE_FORMAT_ATTRS Schema Attributes
+DEFAULT_MACRO XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_1 Yes
+XLSXR_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(XLSXR_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_CASE_SENSITIVE_FEATURE_TYPES_XLSXR_1 YES
+XLSXR_1_CASE_SENSITIVE_FEATURE_TYPES "$(XLSXR_IN_CASE_SENSITIVE_FEATURE_TYPES_XLSXR_1)"
+DEFAULT_MACRO XLSXR_IN_ALLOW_DOLLAR_SIGNS_XLSXR_1 YES
+XLSXR_1_ALLOW_DOLLAR_SIGNS "$(XLSXR_IN_ALLOW_DOLLAR_SIGNS_XLSXR_1)"
+# ===========================================================================
+DEFAULT_MACRO XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1 
+XLSXR_1_NETWORK_AUTHENTICATION "$(XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1)"
+GUI OPTIONAL AUTHENTICATOR XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ===========================================================================
+DEFAULT_MACRO XLSXR_IN_ATTRIBUTE_READING_XLSXR_1 DEFLINE
+XLSXR_1_ATTRIBUTE_READING "$(XLSXR_IN_ATTRIBUTE_READING_XLSXR_1)"
+XLSXR_1_DATASET "$(SourceDataset_XLSXR_1)"
+XLSXR_1_GENERATE_FME_BUILD_NUM 17652
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "TEXTLINE_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER TEXTLINE TEXTLINE_1
+# =====================================================================
+# The following GUI line prompts for a folder to be used as the
+# the destination for the TextLine files. The user input is stored in
+# a macro, which is then used to define the dataset to be written.
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_TEXTLINE_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER TEXTLINE TEXTLINE_1
+DEFAULT_MACRO DestDataset_TEXTLINE_1 $(DestDataset_TEXTLINE)
+GUI FILENAME DestDataset_TEXTLINE_1 Text/Compressed_Text_Files(*.txt;*.txt.gz)|*.txt;*.txt.gz|Text_Files(*.txt)|*.txt|Compressed_Text_Files(*.txt.gz)|*.txt.gz|All_files(*)|* Destination Text File:
+# =====================================================================
+# The following GUI line prompts for the overwrite flag. The default is
+# YES. Possible values are YES or NO. Any value other than NO or
+# no is interpreted as YES.
+DEFAULT_MACRO TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_1 YES
+TEXTLINE_1_OVERWRITE_FILE "$(TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_1)"
+GUI CHOICE TEXTLINE_OUT_OVERWRITE_FILE_TEXTLINE_1 YES%NO Overwrite Existing File:
+# =====================================================================
+# Set the type of encoding for the output file
+# =====================================================================
+# Set line termination character
+DEFAULT_MACRO TEXTLINE_OUT_END_OF_LINE_TEXTLINE_1 System
+TEXTLINE_1_END_OF_LINE "$(TEXTLINE_OUT_END_OF_LINE_TEXTLINE_1)"
+GUI CHOICE TEXTLINE_OUT_END_OF_LINE_TEXTLINE_1 System%Windows%Unix%Macintosh%Source%None Line Termination:
+# =====================================================================
+# Set whether to write the last line termination character
+DEFAULT_MACRO TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_1 YES
+TEXTLINE_1_WRITE_LAST_EOL "$(TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_1)"
+GUI CHOICE TEXTLINE_OUT_WRITE_LAST_EOL_TEXTLINE_1 YES%NO Write Last Line Terminator:
+DEFAULT_MACRO TEXTLINE_OUT_ENCODING_TEXTLINE_1 utf-8
+TEXTLINE_1_ENCODING "$(TEXTLINE_OUT_ENCODING_TEXTLINE_1)"
+GUI STRING_OR_ENCODING TEXTLINE_OUT_ENCODING_TEXTLINE_1 SYSTEM%* Character Encoding:
+# =====================================================================
+# The following GUI line prompts for the overwrite flag. The default is
+# YES. Possible values are YES or NO. Any value other than NO or
+# no is interpreted as YES.
+DEFAULT_MACRO TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_1 YES
+TEXTLINE_1_WRITE_UTF8_BOM "$(TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_1)"
+GUI CHOICE TEXTLINE_OUT_WRITE_UTF8_BOM_TEXTLINE_1 YES%NO Write UTF Byte Order Mark
+# =====================================================================
+# Set the mime type. Note -- it is actually only used inside of workspaces
+# as a FORMAT_PARAMETER which even then is parsed only by the FME Server
+# Repository Manager
+DEFAULT_MACRO TEXTLINE_OUT_MIME_TYPE_TEXTLINE_1 text/plain
+TEXTLINE_1_MIME_TYPE "$(TEXTLINE_OUT_MIME_TYPE_TEXTLINE_1)"
+GUI STRING_OR_CHOICE TEXTLINE_OUT_MIME_TYPE_TEXTLINE_1 application/json%application/octet-stream%application/xml%application/x-www-form-urlencoded%image/gif%image/jpeg%image/png%image/tiff%multipart/mixed%multipart/alternative%multipart/related%text/html%text/plain%text/xml MIME Type:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO TEXTLINE_OUT_DESTINATION_DATASETTYPE_VALIDATION_TEXTLINE_1 Yes
+TEXTLINE_1_DESTINATION_DATASETTYPE_VALIDATION "$(TEXTLINE_OUT_DESTINATION_DATASETTYPE_VALIDATION_TEXTLINE_1)"
+TEXTLINE_1_DATASET "$(DestDataset_TEXTLINE_1)"
+TEXTLINE_1_GENERATE_FME_BUILD_NUM 17652
+#! END_DEST_HEADER
+#! START_WB_HEADER
+TEXTLINE_1_DATASET{*} "$(DestDataset_TEXTLINE_1)"
+TEXTLINE_1_FANOUT_EXPRESSION @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>fme_feature_type<closeparen>.rdf,TEXTLINE_1)
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)GenerateRoadSignCodeList.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+DEFAULT_MACRO DATASET_KEYWORD_XLSXR_1 XLSXR_1
+DEFAULT_MACRO DATASET_KEYWORD_TEXTLINE_1 TEXTLINE_1
+# -------------------------------------------------------------------------
+
+XLSXR_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME GenerateRoadSignCodeList
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_XLSXR_1)   INPUT FEATURE_TYPE *    ROUTE XLSXR "XLSXR_1::Guide(13)" multi_reader_keyword,$(DATASET_KEYWORD_XLSXR_1) TO FME_GENERIC "::Guide(13)" ALIAS_GEOMETRY    ROUTE XLSXR "XLSXR_1::Regulatory(12)" multi_reader_keyword,$(DATASET_KEYWORD_XLSXR_1) TO FME_GENERIC "::Regulatory(12)" ALIAS_GEOMETRY    ROUTE XLSXR "XLSXR_1::Warning (11)" multi_reader_keyword,$(DATASET_KEYWORD_XLSXR_1) TO FME_GENERIC "::Warning (11)" ALIAS_GEOMETRY    ROUTE XLSXR "XLSXR_1::Public Facilities (21)" multi_reader_keyword,$(DATASET_KEYWORD_XLSXR_1) TO FME_GENERIC "::Public Facilities (21)" ALIAS_GEOMETRY    ROUTE XLSXR "XLSXR_1::Ambient   Road Condition (31)" multi_reader_keyword,$(DATASET_KEYWORD_XLSXR_1) TO FME_GENERIC "::Ambient   Road Condition (31)" ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+XLSXR_1_MERGE_DEF "XLSXR_1::Guide(13)" EXACT Guide<openparen>13<closeparen> DEFLINE xlsx_start_row,,xlsx_end_row,,xlsx_schema_end_col,0,xlsx_schema_start_row,2,xlsx_schema_start_col,0,xlsx_header_row,1,xlsx_schema_end_row,0,fme_attribute_reading,defined,Traffic<space>sign<space>for<space>,char<openparen>70<closeparen>,service<space>Category,number<openparen>3<comma>0<closeparen>,Pictogram<space>Category,number<openparen>4<comma>0<closeparen>,Related<space>attributes,char<openparen>118<closeparen>,U.N.<solidus>Vienna,char<openparen>8<closeparen>,Germany,string,France,string,UK,string,Italy,string,Spain,string,Netherlands,string,Belgium,string,Switzerland,string,Austria,string,Ireland,string,Poland,string,Sweden,string,Finland,string,Norway,string,Greece,string,Czech<space>Rep,string,Slovakia,string,Russia<space><amp><space>Belarus,string,U.S.,string,South<space>Korea,string,Japan,string,AA,string,AB,string,AC,string
+XLSXR_1_MERGE_DEF "XLSXR_1::Regulatory(12)" EXACT Regulatory<openparen>12<closeparen> DEFLINE xlsx_start_row,,xlsx_end_row,,xlsx_schema_end_col,0,xlsx_schema_start_row,2,xlsx_schema_start_col,0,xlsx_header_row,1,xlsx_schema_end_row,0,fme_attribute_reading,defined,Traffic<space>sign<space>for<space>,char<openparen>135<closeparen>,service<space>Category,number<openparen>3<comma>0<closeparen>,Pictogram<space>Category,number<openparen>4<comma>0<closeparen>,Pictogram<space>Category00,number<openparen>4<comma>0<closeparen>,Related<space>attributes,char<openparen>167<closeparen>,U.N.<solidus>Vienna,char<openparen>9<closeparen>,Germany,string,France,string,UK,string,Italy,string,Spain,string,Netherlands,string,Belgium,string,Switzerland,string,Austria,string,Ireland,string,Poland,string,Sweden,string,Finland,string,Norway,string,Greece,string,Czech<space>Rep,string,Slovakia,string,Russia<space><amp><space>Belarus,string,U.S.,string,South<space>Korea,string,Japan,string
+XLSXR_1_MERGE_DEF "XLSXR_1::Warning (11)" EXACT Warning<space><openparen>11<closeparen> DEFLINE xlsx_start_row,,xlsx_end_row,,xlsx_schema_end_col,0,xlsx_schema_start_row,2,xlsx_schema_start_col,0,xlsx_header_row,1,xlsx_schema_end_row,0,fme_attribute_reading,defined,Traffic<space>sign<space>for<space>,char<openparen>101<closeparen>,service<space>Category,number<openparen>3<comma>0<closeparen>,Pictogram<space>Category,number<openparen>4<comma>0<closeparen>,Pictogram<space>Category00,number<openparen>4<comma>0<closeparen>,Related<space>attributes,char<openparen>31<closeparen>,U.N.<solidus>Vienna,char<openparen>18<closeparen>,Germany,string,France,string,UK,string,Italy,string,Spain,string,Netherlands,string,Belgium,string,Switzerland,string,Austria,string,Ireland,string,Poland,string,Sweden,string,Finland,string,Norway,string,Greece,string,Czech<space>Rep,string,Slovakia,string,Russia<space><amp><space>Belarus,string,U.S.,string,South<space>Korea,string,Japan,string,AB,string
+XLSXR_1_MERGE_DEF "XLSXR_1::Public Facilities (21)" EXACT Public<space>Facilities<space><openparen>21<closeparen> DEFLINE xlsx_start_row,,xlsx_end_row,,xlsx_schema_end_col,0,xlsx_schema_start_row,2,xlsx_schema_start_col,0,xlsx_header_row,1,xlsx_schema_end_row,0,fme_attribute_reading,defined,Traffic<space>sign<space>for<space>,char<openparen>38<closeparen>,service<space>Category,number<openparen>3<comma>0<closeparen>,Pictogram<space>Category,number<openparen>4<comma>0<closeparen>,Related<space>attributes,char<openparen>21<closeparen>,U.N.<solidus>Vienna,string,Germany,string,France,string,UK,string,Italy,string,Spain,string,Netherlands,string,Belgium,string,Switzerland,string,Austria,string,Ireland,string,Poland,string,Sweden,string,Finland,string,Norway,string,Greece,string,Czech<space>Rep,string,Slovakia,string,Russia<space><amp><space>Belarus,string,U.S.,string,South<space>Korea,string,Japan,string
+XLSXR_1_MERGE_DEF "XLSXR_1::Ambient   Road Condition (31)" EXACT Ambient<space><space><space>Road<space>Condition<space><openparen>31<closeparen> DEFLINE xlsx_start_row,,xlsx_end_row,,xlsx_schema_end_col,0,xlsx_schema_start_row,2,xlsx_schema_start_col,0,xlsx_header_row,1,xlsx_schema_end_row,0,fme_attribute_reading,defined,Traffic<space>sign<space>for<space>,char<openparen>42<closeparen>,service<space>Category,number<openparen>3<comma>0<closeparen>,Pictogram<space>Category,number<openparen>4<comma>0<closeparen>,Related<space>attributes,string,U.N.<solidus>Vienna,string,Germany,string,France,string,UK,string,Italy,string,Spain,string,Netherlands,string,Belgium,string,Switzerland,string,Austria,string,Ireland,string,Poland,string,Sweden,string,Finland,string,Norway,string,Greece,string,Czech<space>Rep,string,Slovakia,string,Russia<space><amp><space>Belarus,string,U.S.,string,Request<space>by<space>NL,char<openparen>2<closeparen>,Request<space>by<space>AT,string,Request<space>by<space>DE,string,South<space>Korea,string,Japan,string,AD,string,AE,string,AF,string,AG,string,AH,string,AI,string,AJ,string,AK,string,AL,string,AM,string,AN,string
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Ambient   Road Condition (31) (XLSXR_1) Splitter"    INPUT FEATURE_TYPE "Ambient   Road Condition (31)"    OUTPUT FEATURE_TYPE "Ambient   Road Condition (31)_XLSXR_1"
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Public Facilities (21) (XLSXR_1) Splitter"    INPUT FEATURE_TYPE "Public Facilities (21)"    OUTPUT FEATURE_TYPE "Public Facilities (21)_XLSXR_1"
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Guide(13) (XLSXR_1) Splitter"    INPUT FEATURE_TYPE "Guide(13)"    OUTPUT FEATURE_TYPE "Guide(13)_XLSXR_1"
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Regulatory(12) (XLSXR_1) Splitter"    INPUT FEATURE_TYPE "Regulatory(12)"    OUTPUT FEATURE_TYPE "Regulatory(12)_XLSXR_1"
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Warning (11) (XLSXR_1) Splitter"    INPUT FEATURE_TYPE "Warning (11)"    OUTPUT FEATURE_TYPE "Warning (11)_XLSXR_1"
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeManager_4    INPUT  FEATURE_TYPE "Regulatory(12)_XLSXR_1"    INPUT  FEATURE_TYPE "Guide(13)_XLSXR_1"    INPUT  FEATURE_TYPE "Ambient   Road Condition (31)_XLSXR_1"    INPUT  FEATURE_TYPE "Public Facilities (21)_XLSXR_1"    INPUT  FEATURE_TYPE "Warning (11)_XLSXR_1"    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "Traffic<space>sign<space>for<space>" "Description" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "Pictogram<space>Category00" "Pictogram<space>Category" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "" "gddSymbolCode" "<at>Value<openparen>service<space>Category<closeparen>-<at>Value<openparen>Pictogram<space>Category<closeparen>" "SET_TO" }      ATTR_ACTION { "" "gddClassCode" "<at>Value<openparen>service<space>Category<closeparen>" "SET_TO" }      ATTR_ACTION { "U.N.<solidus>Vienna" "U.N.<solidus>Vienna" "" "REMOVE" }      ATTR_ACTION { "Germany" "Germany" "" "REMOVE" }      ATTR_ACTION { "France" "France" "" "REMOVE" }      ATTR_ACTION { "UK" "UK" "" "REMOVE" }      ATTR_ACTION { "Italy" "Italy" "" "REMOVE" }      ATTR_ACTION { "Spain" "Spain" "" "REMOVE" }      ATTR_ACTION { "Netherlands" "Netherlands" "" "REMOVE" }      ATTR_ACTION { "Belgium" "Belgium" "" "REMOVE" }      ATTR_ACTION { "Switzerland" "Switzerland" "" "REMOVE" }      ATTR_ACTION { "Austria" "Austria" "" "REMOVE" }      ATTR_ACTION { "Ireland" "Ireland" "" "REMOVE" }      ATTR_ACTION { "Poland" "Poland" "" "REMOVE" }      ATTR_ACTION { "Sweden" "Sweden" "" "REMOVE" }      ATTR_ACTION { "Finland" "Finland" "" "REMOVE" }      ATTR_ACTION { "Norway" "Norway" "" "REMOVE" }      ATTR_ACTION { "Greece" "Greece" "" "REMOVE" }      ATTR_ACTION { "Czech<space>Rep" "Czech<space>Rep" "" "REMOVE" }      ATTR_ACTION { "Slovakia" "Slovakia" "" "REMOVE" }      ATTR_ACTION { "Russia<space><amp><space>Belarus" "Russia<space><amp><space>Belarus" "" "REMOVE" }      ATTR_ACTION { "U.S." "U.S." "" "REMOVE" }      ATTR_ACTION { "South<space>Korea" "South<space>Korea" "" "REMOVE" }      ATTR_ACTION { "Japan" "Japan" "" "REMOVE" }      ATTR_ACTION { "AA" "AA" "" "REMOVE" }      ATTR_ACTION { "AB" "AB" "" "REMOVE" }      ATTR_ACTION { "AC" "AC" "" "REMOVE" }      ATTR_ACTION { "Request<space>by<space>NL" "Request<space>by<space>NL" "" "REMOVE" }      ATTR_ACTION { "Request<space>by<space>AT" "Request<space>by<space>AT" "" "REMOVE" }      ATTR_ACTION { "Request<space>by<space>DE" "Request<space>by<space>DE" "" "REMOVE" }      ATTR_ACTION { "AD" "AD" "" "REMOVE" }      ATTR_ACTION { "AE" "AE" "" "REMOVE" }      ATTR_ACTION { "AF" "AF" "" "REMOVE" }      ATTR_ACTION { "AG" "AG" "" "REMOVE" }      ATTR_ACTION { "AH" "AH" "" "REMOVE" }      ATTR_ACTION { "AI" "AI" "" "REMOVE" }      ATTR_ACTION { "AJ" "AJ" "" "REMOVE" }      ATTR_ACTION { "AK" "AK" "" "REMOVE" }      ATTR_ACTION { "AL" "AL" "" "REMOVE" }      ATTR_ACTION { "AM" "AM" "" "REMOVE" }      ATTR_ACTION { "AN" "AN" "" "REMOVE" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_4_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory    FACTORY_NAME TestFilter_2    INPUT  FEATURE_TYPE AttributeManager_4_OUTPUT    OUTPUT FEATURE_TYPE TestFilter_2_TESTFILTERINPUTLINE_0
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_2_Condition_1 INPUT FEATURE_TYPE TestFilter_2_TESTFILTERINPUTLINE_0 TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>Pictogram<space>Category<closeparen>,TestFilter_2) ATTRIBUTE_HAS_VALUE "" ENCODED TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>service<space>Category<closeparen>,TestFilter_2) ATTRIBUTE_HAS_VALUE "" ENCODED BOOLEAN_OPERATOR AND COMPOSITE_TEST_EXPR <Unused> OUTPUT PASSED FEATURE_TYPE TestFilter_2_HasValue OUTPUT FAILED FEATURE_TYPE TestFilter_2_TESTFILTERINPUTLINE_1
+FACTORY_DEF * TeeFactory FACTORY_NAME TestFilter_2_<lt>UNFILTERED<gt> INPUT FEATURE_TYPE TestFilter_2_TESTFILTERINPUTLINE_1 OUTPUT FEATURE_TYPE TestFilter_2_<lt>UNFILTERED<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter_2 HasValue Splitter"   INPUT FEATURE_TYPE TestFilter_2_HasValue   OUTPUT FEATURE_TYPE TestFilter_2_HasValue_0_jkdhobJUb+c=   OUTPUT FEATURE_TYPE TestFilter_2_HasValue_1_pz72Ih5W79I=
+FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter_2 <lt>UNFILTERED<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE TestFilter_2_<lt>UNFILTERED<gt>
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME AttributeManager_7    INPUT  FEATURE_TYPE TestFilter_2_HasValue_1_pz72Ih5W79I=    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "gddSymbolCode" "gddCode" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "gddClassCode" "gddClassCode" "" "REMOVE" }      ATTR_ACTION { "" "fme_feature_type" "TrafficSignSymbolCode" "SET_TO" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_7_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} DuplicateRemoverFactory    FACTORY_NAME DuplicateFilter    COMMAND_PARM_EVALUATION SINGLE_PASS    SUPPORTS_FEATURE_TABLES    INPUT  FEATURE_TYPE TestFilter_2_HasValue_0_jkdhobJUb+c=    KEY_ATTRIBUTES { gddClassCode }    INPUT_IS_ORDERED NO    OUTPUT UNIQUE FEATURE_TYPE DuplicateFilter_UNIQUE
+FACTORY_DEF * TeeFactory   FACTORY_NAME "DuplicateFilter UNIQUE Splitter"   INPUT FEATURE_TYPE DuplicateFilter_UNIQUE   OUTPUT FEATURE_TYPE DuplicateFilter_UNIQUE_0_aSa6pU6KMMU=   OUTPUT FEATURE_TYPE DuplicateFilter_UNIQUE_1_mJ5J1cUnSzA=
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME AttributeManager_6    INPUT  FEATURE_TYPE DuplicateFilter_UNIQUE_1_mJ5J1cUnSzA=    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "Description" "Description" "" "REMOVE" }      ATTR_ACTION { "gddSymbolCode" "gddSymbolCode" "" "REMOVE" }      ATTR_ACTION { "gddClassCode" "gddCode" "" "RENAME_SET_VALUE" }      ATTR_ACTION { "" "fme_feature_type" "TrafficSignClassCode" "SET_TO" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_6_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeManager_5    INPUT  FEATURE_TYPE AttributeManager_7_OUTPUT    INPUT  FEATURE_TYPE AttributeManager_6_OUTPUT    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "" "xml" "<space><space><space><space><lt>skos:Concept<space>rdf:about=<quote>https:<solidus><solidus>raw.githubusercontent.com<solidus>jetgeo<solidus>GIS2OWL<solidus>_<at>Value<openparen>gddCode<closeparen><quote><gt><lf><space><space><space><space><space><space><lt>skos:inScheme<space>rdf:resource=<quote>https:<solidus><solidus>raw.githubusercontent.com<solidus>jetgeo<solidus>GIS2OWL<solidus>_<at>Value<openparen>gddCode<closeparen><quote><solidus><gt><lf><space><space><space><space><space><space><lt>skos:prefLabel<space>xml:lang=<quote>en<quote><gt><at>Value<openparen>Description<closeparen><lt><solidus>skos:prefLabel<gt><lf><space><space><space><space><space><space><lt>skos:definition<space>xml:lang=<quote>en<quote><gt><at>Value<openparen>Description<closeparen><lt><solidus>skos:definition<gt><lf><space><space><lt><solidus>skos:Concept<gt><lf>" "SET_TO" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_5_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory    FACTORY_NAME ListBuilder_2_fme_type_remover    INPUT  FEATURE_TYPE AttributeManager_5_OUTPUT    OUTPUT FEATURE_TYPE ListBuilder_2_no_fme_type       @RemoveAttributes(fme_type,fme_geometry)
+FACTORY_DEF {*} ListFactory    FACTORY_NAME ListBuilder_2    INPUT FEATURE_TYPE ListBuilder_2_no_fme_type    LIST_NAME "_list{}"    LIST_ATTRS_TO_INCLUDE { Description gddCode Pictogram<space>Category Related<space>attributes service<space>Category xml }    LIST_ATTRS_TO_INCLUDE_MODE SELECTED    GROUP_BY { fme_feature_type }    ORDERED_BY_GROUP No    OUTPUT LIST FEATURE_TYPE ListBuilder_2_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF * XMLTemplaterFactory FACTORY_NAME XMLTemplater_2 INPUT CONTROL_FEATURE FEATURE_TYPE ListBuilder_2_OUTPUT INPUT DATA_FEATURE FEATURE_TYPE XMLTemplater_2_DataFeatures RESULT_ATTR _result OUTPUT_XML_HEADER YES BUCKET_ATTR_NAME __xml_templater_bucket__ CONTROL_TEMPLATE_EXPR <lt>?xml<space>version=<quote>1.0<quote><space>encoding=<quote>UTF-8<quote>?<gt><lf><lt>?xml-stylesheet<space>type=<apos>text<solidus>xsl<apos><space>href=<apos>.<solidus>CodelistDictionary-skosrdfxml.xsl<apos>?<gt><lf><lt>rdf:RDF<lf><space><space>xmlns:skos=<quote>http:<solidus><solidus>www.w3.org<solidus>2004<solidus>02<solidus>skos<solidus>core#<quote><lf><space><space>xmlns:rdf=<quote>http:<solidus><solidus>www.w3.org<solidus>1999<solidus>02<solidus>22-rdf-syntax-ns#<quote><gt><lf><opencurly>fme:get-list-attribute<openparen><quote>_list<opencurly><closecurly>.xml<quote><closeparen><closecurly><lf><lt><solidus>rdf:RDF<gt> OUTPUT XML_DOCUMENT FEATURE_TYPE XMLTemplater_2_OUTPUT
+# -------------------------------------------------------------------------
+MACRO casemac
+INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
+Tcl2 proc StringReplacer_2_a3864e3a_847b_4e8f_a98c_be93cf3db3290_replacer { findText replaceText invalidValue} {     set attrs [split \"_result\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer_2    INPUT  FEATURE_TYPE XMLTemplater_2_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_2_OUTPUT         @Tcl2("StringReplacer_2_a3864e3a_847b_4e8f_a98c_be93cf3db3290_replacer {<amp>gt<semicolon>} {<gt>} {_FME_NO_OP_}")
+# -------------------------------------------------------------------------
+MACRO casemac
+INCLUDE [ if { {NO} == {NO} } { puts {MACRO casemac -nocase}} ]
+Tcl2 proc StringReplacer_5_9ba2f57a_2a78_4e0b_a518_e868e8c9358d0_replacer { findText replaceText invalidValue} {     set attrs [split \"_result\" {,}];     set findValue [FME_DecodeText $findText];     set replaceValue [FME_DecodeText $replaceText];     foreach attr $attrs {       set attrVal [FME_GetAttribute $attr];       set noMatch true;       if {{NO} == {YES}} {         set newAttrVal [FME_ReplaceRegex $(casemac) $findValue $attrVal $replaceValue];       } else {         set newAttrVal [string map $(casemac) [list $findValue $replaceValue] $attrVal];       };       if { $newAttrVal ne $attrVal } {         set noMatch false;         FME_SetAttribute $attr $newAttrVal;       };       if {$noMatch} {          if { $invalidValue == {FME_NULL_VALUE} } {             FME_SetAttributeNull $attr;          } elseif { $invalidValue != {_FME_NO_OP_} }  {             FME_SetAttribute $attr [FME_DecodeText $invalidValue];          };       };     }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME StringReplacer_5    INPUT  FEATURE_TYPE StringReplacer_2_OUTPUT    OUTPUT FEATURE_TYPE StringReplacer_5_OUTPUT         @Tcl2("StringReplacer_5_9ba2f57a_2a78_4e0b_a518_e868e8c9358d0_replacer {<amp>gt<semicolon>} {<gt>} {_FME_NO_OP_}")
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeManager_8    INPUT  FEATURE_TYPE StringReplacer_5_OUTPUT    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "_result" "text_line_data" "" "RENAME_SET_VALUE" }    OUTPUT OUTPUT FEATURE_TYPE AttributeManager_8_OUTPUT
+# -------------------------------------------------------------------------
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {DuplicateFilter_Unique} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
+FACTORY_DEF {*} InspectorFactory    FACTORY_NAME DuplicateFilter_Unique_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE DuplicateFilter_UNIQUE_0_aSa6pU6KMMU=    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY {  }    GROUP_ATTRIBUTE_PREFIX { DuplicateFilter_Unique }    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+FACTORY_DEF * RecorderFactory    FACTORY_NAME DuplicateFilter_Unique_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA Description,varchar<openparen>255<closeparen>,service<space>Category,varchar<openparen>255<closeparen>,Pictogram<space>Category,varchar<openparen>255<closeparen>,gddSymbolCode,varchar<openparen>255<closeparen>,gddClassCode,varchar<openparen>255<closeparen>,Related<space>attributes,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeManager_8_OUTPUT TO TEXTLINE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>text_line<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * CreationFactory    FACTORY_NAME VisualizerProcessor   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; ")
+FACTORY_DEF * TeeFactory    FACTORY_NAME VisualizerCleaner   INPUT FEATURE_TYPE __NUKEME__

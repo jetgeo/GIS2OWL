@@ -1,0 +1,328 @@
+2019-06-18 13:57:13|   0.0|  0.0|INFORM|FME 2018.1.1.2 (20190121 - Build 18586 - WIN64)
+2019-06-18 13:57:13|   0.0|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\'
+2019-06-18 13:57:13|   0.0|  0.0|INFORM|FME Desktop Oracle Edition (floating)
+2019-06-18 13:57:13|   0.0|  0.0|INFORM|Permanent License.
+2019-06-18 13:57:13|   0.0|  0.0|INFORM|Machine host name is: SVV-58758
+2019-06-18 13:57:13|   0.0|  0.0|INFORM|START - ProcessID: 15016, peak process memory usage: 27652 kB, current process memory usage: 27504 kB
+2019-06-18 13:57:13|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\fme.exe' `C:/DATA/GitHub/jetgeo/GIS2OWL/iso14823\wb-xlate-1560859032211_2316' `LOG_STANDARDOUT' `YES' `LogCountServerName' `{5a7e44dc-7f95-465d-8d5d-9f34f59301ed}' `DEBUG_PORT' `60692'
+2019-06-18 13:57:13|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\knjetl\AppData\Roaming\Safe Software\FME\'
+2019-06-18 13:57:13|   0.1|  0.1|INFORM|Shared folders for formats are : C:\Program Files\FME\datasources;C:\Users\knjetl\Documents\FME\Formats
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|Shared folders for transformers are : C:\Users\knjetl\AppData\Roaming\Safe Software\FME\Packages\18586-win64\transformers;C:\Program Files\FME\transformers;C:\Users\knjetl\Documents\FME\Transformers
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|Shared folders for coordinate systems are : C:\Users\knjetl\Documents\FME\CoordinateSystems
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|Shared folders for coordinate system exceptions are : C:\Users\knjetl\Documents\FME\CoordinateSystemExceptions
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|Shared folders for coordinate system grid overrides are : C:\Users\knjetl\Documents\FME\CoordinateSystemGridOverrides
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : C:\Users\knjetl\Documents\FME\CsmapTransformationExceptions
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|Shared folders for transformer categories are : C:\Users\knjetl\Documents\FME\TransformerCategories
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|FME Configuration: Writer Keyword is `MULTI_WRITER'
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `MULTI_WRITER_DEF'
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|FME Configuration: Current working folder is `C:\DATA\GitHub\jetgeo\GIS2OWL\iso14823'
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\knjetl\AppData\Local\Temp', set from environment variable `TEMP'
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\'
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'C:\DATA\GitHub\jetgeo\GIS2OWL\iso14823/'
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'GenerateRoadSignCodeList.fmw'
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2018.1.1.2'
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|System Status: 339.66 GB of disk space available in the FME temporary folder (C:\Users\knjetl\AppData\Local\Temp)
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|System Status: 128.00 TB of virtual memory available
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|Operating System: Microsoft Windows 10 64-bit  (Build 16299)
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|FME Platform: WIN64
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|Locale: nb_NO
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|Code Page: 1252  (ANSI - latinsk I)
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|FME Configuration: Process limit is 31.83 GB of physical memory
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|FME Configuration: Start freeing memory when process usage exceeds 95.50 GB of virtual memory
+2019-06-18 13:57:13|   0.1|  0.0|INFORM|FME Configuration: Stop freeing memory when process usage is below 71.63 GB of virtual memory
+2019-06-18 13:57:14|   0.1|  0.0|INFORM|Creating writer for format: 
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|Creating reader for format: 
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding XLSXR Reader with keyword XLSXR_2
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|Creating reader for format: Microsoft Excel
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `XLSXR'
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|Loaded module 'XLSXR' from file 'C:\Program Files\FME\plugins/xlsx.dll'
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|FME API version of module 'XLSXR' matches current internal version (3.8 20180604)
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|Using MultiWriter with keyword `MULTI_WRITER' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\plugins/LogCount_func.dll'
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (3.8 20180604)
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|Loaded module 'BreakpointFactory' from file 'C:\Program Files\FME\plugins/BreakpointFactory.dll'
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|FME API version of module 'BreakpointFactory' matches current internal version (3.8 20180604)
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|Feature Inspection module initialized. Workbench@60692 and FME@53407
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|FME API version of module 'BreakpointFactory' matches current internal version (3.8 20180604)
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|... Last line repeated 12 times ...
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|Loaded module 'DuplicateRemoverFactory' from file 'C:\Program Files\FME\plugins/DuplicateRemoverFactory.dll'
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|FME API version of module 'DuplicateRemoverFactory' matches current internal version (3.8 20180604)
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|FME API version of module 'BreakpointFactory' matches current internal version (3.8 20180604)
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|... Last line repeated 3 times ...
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|Loaded module 'XMLTemplaterFactory' from file 'C:\Program Files\FME\plugins/XMLTemplaterFactory.dll'
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|FME API version of module 'XMLTemplaterFactory' matches current internal version (3.8 20180604)
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|FME API version of module 'BreakpointFactory' matches current internal version (3.8 20180604)
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|... Last line repeated 3 times ...
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|Excel Reader: Output cell formulas: 'false'
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|Excel Reader: Output cell formatting: 'false'
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|Excel Reader: Output cell comments: 'false'
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|Excel Reader: Force full datetime values: 'false'
+2019-06-18 13:57:14|   0.2|  0.0|INFORM|Excel Reader: Opening dataset 'C:\DATA\GitHub\vegvesen\TN-ITS\UML (EA)\TS14823-Pictgram-catalogue-21_July.xlsx'...
+2019-06-18 13:57:14|   0.7|  0.5|INFORM|Excel Reader: Reading sheet 'Warning (11)'...
+2019-06-18 13:57:14|   0.7|  0.0|INFORM|Excel Reader: Sheet 'Warning (11)' range: Start Row '3', Start Column 'A', End Row '911', End Column 'AB'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Sheet 'Warning (11)' of dataset 'C:\DATA\GitHub\vegvesen\TN-ITS\UML (EA)\TS14823-Pictgram-catalogue-21_July.xlsx' does not match the provided schema. Values may be skipped or read with the mismatched column names
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'A' has a schema header of 'Traffic sign for ', but the source file has a header value of 'Intersection where the priority is prescribed by the general priority rule_(Crossroads)'. Values will be read using 'Traffic sign for '
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'B' has a schema header of 'GDD code', but the source file has a header value of '11'. Values will be read using 'GDD code'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'C' has a schema header of 'GDD code00', but the source file has a header value of '111'. Values will be read using 'GDD code00'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'D' has a schema header of 'GDD code01', but the source file has a header value of '11100'. Values will be read using 'GDD code01'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'E' has a schema header of 'Related attributes', but the source file has a header value of 'None'. Values will be read using 'Related attributes'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'F' has a schema header of 'U.N./Vienna', but the source file has a header value of 'A, 18a or A, 18b”'. Values will be read using 'U.N./Vienna'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'G' has a schema header of 'Germany', but the source file has a header value of 'G'. Values will be read using 'Germany'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'H' has a schema header of 'France', but the source file has a header value of 'H'. Values will be read using 'France'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'I' has a schema header of 'UK', but the source file has a header value of 'I'. Values will be read using 'UK'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'J' has a schema header of 'Italy', but the source file has a header value of 'J'. Values will be read using 'Italy'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'K' has a schema header of 'Spain', but the source file has a header value of 'K'. Values will be read using 'Spain'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'L' has a schema header of 'Netherlands', but the source file has a header value of 'L'. Values will be read using 'Netherlands'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'M' has a schema header of 'Belgium', but the source file has a header value of 'M'. Values will be read using 'Belgium'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'N' has a schema header of 'Switzerland', but the source file has a header value of 'N'. Values will be read using 'Switzerland'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'O' has a schema header of 'Austria', but the source file has a header value of 'O'. Values will be read using 'Austria'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'P' has a schema header of 'Ireland', but the source file has a header value of 'P'. Values will be read using 'Ireland'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'Q' has a schema header of 'Poland', but the source file has a header value of 'Q'. Values will be read using 'Poland'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'R' has a schema header of 'Sweden', but the source file has a header value of 'R'. Values will be read using 'Sweden'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'S' has a schema header of 'Finland', but the source file has a header value of 'S'. Values will be read using 'Finland'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'T' has a schema header of 'Norway', but the source file has a header value of 'T'. Values will be read using 'Norway'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'U' has a schema header of 'Greece', but the source file has a header value of 'U'. Values will be read using 'Greece'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'V' has a schema header of 'Czech Rep', but the source file has a header value of 'V'. Values will be read using 'Czech Rep'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'W' has a schema header of 'Slovakia', but the source file has a header value of 'W'. Values will be read using 'Slovakia'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'X' has a schema header of 'Russia & Belarus', but the source file has a header value of 'X'. Values will be read using 'Russia & Belarus'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'Y' has a schema header of 'U.S.', but the source file has a header value of 'Y'. Values will be read using 'U.S.'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'Z' has a schema header of 'South Korea', but the source file has a header value of 'Z'. Values will be read using 'South Korea'
+2019-06-18 13:57:14|   0.7|  0.0|WARN  |Excel Reader: Column position 'AA' has a schema header of 'Japan', but the source file has a header value of 'AA'. Values will be read using 'Japan'
+2019-06-18 13:57:14|   0.8|  0.0|INFORM|Excel Reader: Reading sheet 'Regulatory(12)'...
+2019-06-18 13:57:14|   0.8|  0.0|INFORM|Excel Reader: Sheet 'Regulatory(12)' range: Start Row '3', Start Column 'A', End Row '137', End Column 'AA'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Sheet 'Regulatory(12)' of dataset 'C:\DATA\GitHub\vegvesen\TN-ITS\UML (EA)\TS14823-Pictgram-catalogue-21_July.xlsx' does not match the provided schema. Values may be skipped or read with the mismatched column names
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'A' has a schema header of 'Traffic sign for ', but the source file has a header value of 'Priority for oncoming traffic '. Values will be read using 'Traffic sign for '
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'B' has a schema header of 'GDD code', but the source file has a header value of '12'. Values will be read using 'GDD code'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'C' has a schema header of 'GDD code00', but the source file has a header value of '111'. Values will be read using 'GDD code00'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'D' has a schema header of 'GDD code01', but the source file has a header value of '11100'. Values will be read using 'GDD code01'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'E' has a schema header of 'Related attributes', but the source file has a header value of 'SET_(SPD, ADL, EPT)'. Values will be read using 'Related attributes'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'F' has a schema header of 'U.N./Vienna', but the source file has a header value of 'B, 5'. Values will be read using 'U.N./Vienna'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'G' has a schema header of 'Germany', but the source file has a header value of 'G'. Values will be read using 'Germany'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'H' has a schema header of 'France', but the source file has a header value of 'H'. Values will be read using 'France'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'I' has a schema header of 'UK', but the source file has a header value of 'I'. Values will be read using 'UK'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'J' has a schema header of 'Italy', but the source file has a header value of 'J'. Values will be read using 'Italy'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'K' has a schema header of 'Spain', but the source file has a header value of 'K'. Values will be read using 'Spain'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'L' has a schema header of 'Netherlands', but the source file has a header value of 'L'. Values will be read using 'Netherlands'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'M' has a schema header of 'Belgium', but the source file has a header value of 'M'. Values will be read using 'Belgium'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'N' has a schema header of 'Switzerland', but the source file has a header value of 'N'. Values will be read using 'Switzerland'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'O' has a schema header of 'Austria', but the source file has a header value of 'O'. Values will be read using 'Austria'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'P' has a schema header of 'Ireland', but the source file has a header value of 'P'. Values will be read using 'Ireland'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'Q' has a schema header of 'Poland', but the source file has a header value of 'Q'. Values will be read using 'Poland'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'R' has a schema header of 'Sweden', but the source file has a header value of 'R'. Values will be read using 'Sweden'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'S' has a schema header of 'Finland', but the source file has a header value of 'S'. Values will be read using 'Finland'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'T' has a schema header of 'Norway', but the source file has a header value of 'T'. Values will be read using 'Norway'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'U' has a schema header of 'Greece', but the source file has a header value of 'U'. Values will be read using 'Greece'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'V' has a schema header of 'Czech Rep', but the source file has a header value of 'V'. Values will be read using 'Czech Rep'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'W' has a schema header of 'Slovakia', but the source file has a header value of 'W'. Values will be read using 'Slovakia'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'X' has a schema header of 'Russia & Belarus', but the source file has a header value of 'X'. Values will be read using 'Russia & Belarus'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'Y' has a schema header of 'U.S.', but the source file has a header value of 'Y'. Values will be read using 'U.S.'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'Z' has a schema header of 'South Korea', but the source file has a header value of 'Z'. Values will be read using 'South Korea'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'AA' has a schema header of 'Japan', but the source file has a header value of 'AA'. Values will be read using 'Japan'
+2019-06-18 13:57:14|   0.8|  0.0|INFORM|Excel Reader: Reading sheet 'Guide(13)'...
+2019-06-18 13:57:14|   0.8|  0.0|INFORM|Excel Reader: Sheet 'Guide(13)' range: Start Row '3', Start Column 'A', End Row '143', End Column 'AC'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Sheet 'Guide(13)' of dataset 'C:\DATA\GitHub\vegvesen\TN-ITS\UML (EA)\TS14823-Pictgram-catalogue-21_July.xlsx' does not match the provided schema. Values may be skipped or read with the mismatched column names
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'A' has a schema header of 'Traffic sign for ', but the source file has a header value of 'Advance direction signs '. Values will be read using 'Traffic sign for '
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'B' has a schema header of 'GDD code', but the source file has a header value of '13'. Values will be read using 'GDD code'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'C' has a schema header of 'GDD code00', but the source file has a header value of '111'. Values will be read using 'GDD code00'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'D' has a schema header of 'Related attributes', but the source file has a header value of 'DDD'. Values will be read using 'Related attributes'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'E' has a schema header of 'U.N./Vienna', but the source file has a header value of 'G,1a'. Values will be read using 'U.N./Vienna'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'F' has a schema header of 'Germany', but the source file has a header value of 'F'. Values will be read using 'Germany'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'G' has a schema header of 'France', but the source file has a header value of 'G'. Values will be read using 'France'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'H' has a schema header of 'UK', but the source file has a header value of 'H'. Values will be read using 'UK'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'I' has a schema header of 'Italy', but the source file has a header value of 'I'. Values will be read using 'Italy'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'J' has a schema header of 'Spain', but the source file has a header value of 'J'. Values will be read using 'Spain'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'K' has a schema header of 'Netherlands', but the source file has a header value of 'K'. Values will be read using 'Netherlands'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'L' has a schema header of 'Belgium', but the source file has a header value of 'L'. Values will be read using 'Belgium'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'M' has a schema header of 'Switzerland', but the source file has a header value of 'M'. Values will be read using 'Switzerland'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'N' has a schema header of 'Austria', but the source file has a header value of 'N'. Values will be read using 'Austria'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'O' has a schema header of 'Ireland', but the source file has a header value of 'O'. Values will be read using 'Ireland'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'P' has a schema header of 'Poland', but the source file has a header value of 'P'. Values will be read using 'Poland'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'Q' has a schema header of 'Sweden', but the source file has a header value of 'Q'. Values will be read using 'Sweden'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'R' has a schema header of 'Finland', but the source file has a header value of 'R'. Values will be read using 'Finland'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'S' has a schema header of 'Norway', but the source file has a header value of 'S'. Values will be read using 'Norway'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'T' has a schema header of 'Greece', but the source file has a header value of 'T'. Values will be read using 'Greece'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'U' has a schema header of 'Czech Rep', but the source file has a header value of 'U'. Values will be read using 'Czech Rep'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'V' has a schema header of 'Slovakia', but the source file has a header value of 'V'. Values will be read using 'Slovakia'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'W' has a schema header of 'Russia & Belarus', but the source file has a header value of 'W'. Values will be read using 'Russia & Belarus'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'X' has a schema header of 'U.S.', but the source file has a header value of 'X'. Values will be read using 'U.S.'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'Y' has a schema header of 'South Korea', but the source file has a header value of 'Y'. Values will be read using 'South Korea'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'Z' has a schema header of 'Japan', but the source file has a header value of 'Z'. Values will be read using 'Japan'
+2019-06-18 13:57:14|   0.8|  0.0|INFORM|Excel Reader: Reading sheet 'Public Facilities (21)'...
+2019-06-18 13:57:14|   0.8|  0.0|INFORM|Excel Reader: Sheet 'Public Facilities (21)' range: Start Row '3', Start Column 'A', End Row '42', End Column 'Z'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Sheet 'Public Facilities (21)' of dataset 'C:\DATA\GitHub\vegvesen\TN-ITS\UML (EA)\TS14823-Pictgram-catalogue-21_July.xlsx' does not match the provided schema. Values may be skipped or read with the mismatched column names
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'A' has a schema header of 'Traffic sign for ', but the source file has a header value of 'Tourist information'. Values will be read using 'Traffic sign for '
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'B' has a schema header of 'GDD code', but the source file has a header value of '21'. Values will be read using 'GDD code'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'C' has a schema header of 'GDD code00', but the source file has a header value of '111'. Values will be read using 'GDD code00'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'D' has a schema header of 'Related attributes', but the source file has a header value of 'DDD_(DRN, DER, DEP)'. Values will be read using 'Related attributes'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'E' has a schema header of 'U.N./Vienna', but the source file has a header value of 'E'. Values will be read using 'U.N./Vienna'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'F' has a schema header of 'Germany', but the source file has a header value of 'F'. Values will be read using 'Germany'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'G' has a schema header of 'France', but the source file has a header value of 'G'. Values will be read using 'France'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'H' has a schema header of 'UK', but the source file has a header value of 'H'. Values will be read using 'UK'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'I' has a schema header of 'Italy', but the source file has a header value of 'I'. Values will be read using 'Italy'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'J' has a schema header of 'Spain', but the source file has a header value of 'J'. Values will be read using 'Spain'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'K' has a schema header of 'Netherlands', but the source file has a header value of 'K'. Values will be read using 'Netherlands'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'L' has a schema header of 'Belgium', but the source file has a header value of 'L'. Values will be read using 'Belgium'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'M' has a schema header of 'Switzerland', but the source file has a header value of 'M'. Values will be read using 'Switzerland'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'N' has a schema header of 'Austria', but the source file has a header value of 'N'. Values will be read using 'Austria'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'O' has a schema header of 'Ireland', but the source file has a header value of 'O'. Values will be read using 'Ireland'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'P' has a schema header of 'Poland', but the source file has a header value of 'P'. Values will be read using 'Poland'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'Q' has a schema header of 'Sweden', but the source file has a header value of 'Q'. Values will be read using 'Sweden'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'R' has a schema header of 'Finland', but the source file has a header value of 'R'. Values will be read using 'Finland'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'S' has a schema header of 'Norway', but the source file has a header value of 'S'. Values will be read using 'Norway'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'T' has a schema header of 'Greece', but the source file has a header value of 'T'. Values will be read using 'Greece'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'U' has a schema header of 'Czech Rep', but the source file has a header value of 'U'. Values will be read using 'Czech Rep'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'V' has a schema header of 'Slovakia', but the source file has a header value of 'V'. Values will be read using 'Slovakia'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'W' has a schema header of 'Russia & Belarus', but the source file has a header value of 'W'. Values will be read using 'Russia & Belarus'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'X' has a schema header of 'U.S.', but the source file has a header value of 'X'. Values will be read using 'U.S.'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'Y' has a schema header of 'South Korea', but the source file has a header value of 'Y'. Values will be read using 'South Korea'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'Z' has a schema header of 'Japan', but the source file has a header value of 'Z'. Values will be read using 'Japan'
+2019-06-18 13:57:14|   0.8|  0.0|INFORM|Excel Reader: Reading sheet 'Ambient   Road Condition (31)'...
+2019-06-18 13:57:14|   0.8|  0.0|INFORM|Excel Reader: Sheet 'Ambient   Road Condition (31)' range: Start Row '3', Start Column 'A', End Row '16', End Column 'AN'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Sheet 'Ambient   Road Condition (31)' of dataset 'C:\DATA\GitHub\vegvesen\TN-ITS\UML (EA)\TS14823-Pictgram-catalogue-21_July.xlsx' does not match the provided schema. Values may be skipped or read with the mismatched column names
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'A' has a schema header of 'Traffic sign for ', but the source file has a header value of 'Rainfall'. Values will be read using 'Traffic sign for '
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'B' has a schema header of 'GDD code', but the source file has a header value of '31'. Values will be read using 'GDD code'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'C' has a schema header of 'GDD code00', but the source file has a header value of '111'. Values will be read using 'GDD code00'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'D' has a schema header of 'Related attributes', but the source file has a header value of 'D'. Values will be read using 'Related attributes'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'E' has a schema header of 'U.N./Vienna', but the source file has a header value of 'E'. Values will be read using 'U.N./Vienna'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'F' has a schema header of 'Germany', but the source file has a header value of 'F'. Values will be read using 'Germany'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'G' has a schema header of 'France', but the source file has a header value of 'G'. Values will be read using 'France'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'H' has a schema header of 'UK', but the source file has a header value of 'H'. Values will be read using 'UK'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'I' has a schema header of 'Italy', but the source file has a header value of 'I'. Values will be read using 'Italy'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'J' has a schema header of 'Spain', but the source file has a header value of 'J'. Values will be read using 'Spain'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'K' has a schema header of 'Netherlands', but the source file has a header value of 'K'. Values will be read using 'Netherlands'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'L' has a schema header of 'Belgium', but the source file has a header value of 'L'. Values will be read using 'Belgium'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'M' has a schema header of 'Switzerland', but the source file has a header value of 'M'. Values will be read using 'Switzerland'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'N' has a schema header of 'Austria', but the source file has a header value of 'N'. Values will be read using 'Austria'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'O' has a schema header of 'Ireland', but the source file has a header value of 'O'. Values will be read using 'Ireland'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'P' has a schema header of 'Poland', but the source file has a header value of 'P'. Values will be read using 'Poland'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'Q' has a schema header of 'Sweden', but the source file has a header value of 'Q'. Values will be read using 'Sweden'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'R' has a schema header of 'Finland', but the source file has a header value of 'R'. Values will be read using 'Finland'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'S' has a schema header of 'Norway', but the source file has a header value of 'S'. Values will be read using 'Norway'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'T' has a schema header of 'Greece', but the source file has a header value of 'T'. Values will be read using 'Greece'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'U' has a schema header of 'Czech Rep', but the source file has a header value of 'U'. Values will be read using 'Czech Rep'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'V' has a schema header of 'Slovakia', but the source file has a header value of 'V'. Values will be read using 'Slovakia'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'W' has a schema header of 'Russia & Belarus', but the source file has a header value of 'W'. Values will be read using 'Russia & Belarus'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'X' has a schema header of 'U.S.', but the source file has a header value of 'X'. Values will be read using 'U.S.'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'Y' has a schema header of 'Request by NL', but the source file has a header value of 'Y'. Values will be read using 'Request by NL'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'Z' has a schema header of 'Request by AT', but the source file has a header value of 'Z'. Values will be read using 'Request by AT'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'AA' has a schema header of 'Request by DE', but the source file has a header value of 'AA'. Values will be read using 'Request by DE'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'AB' has a schema header of 'South Korea', but the source file has a header value of 'AB'. Values will be read using 'South Korea'
+2019-06-18 13:57:14|   0.8|  0.0|WARN  |Excel Reader: Column position 'AC' has a schema header of 'Japan', but the source file has a header value of 'AC'. Values will be read using 'Japan'
+2019-06-18 13:57:14|   0.8|  0.0|INFORM|Excel Reader: Closing dataset 'C:\DATA\GitHub\vegvesen\TN-ITS\UML (EA)\TS14823-Pictgram-catalogue-21_July.xlsx'...
+2019-06-18 13:57:14|   0.8|  0.0|INFORM|MULTI_READER(MULTI_READER): Done reading 1239 features from 1 readers
+2019-06-18 13:57:14|   0.8|  0.0|INFORM|Emptying factory pipeline
+2019-06-18 13:57:14|   0.8|  0.0|STATS |Router and Unexpected Input Remover(RoutingFactory): Tested 1239 input feature(s), wrote 1239 output feature(s): 1239 matched merge filters, 1239 were routed to output, 0 could not be routed.
+2019-06-18 13:57:14|   0.8|  0.0|STATS |Unexpected Input Remover Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2019-06-18 13:57:14|   0.8|  0.0|STATS |Ambient   Road Condition (31) (XLSXR_2) Splitter(TeeFactory): Cloned 14 input feature(s) into 14 output feature(s)
+2019-06-18 13:57:14|   0.8|  0.0|STATS |Guide(13) (XLSXR_2) Splitter(TeeFactory): Cloned 141 input feature(s) into 141 output feature(s)
+2019-06-18 13:57:14|   0.8|  0.0|STATS |Public Facilities (21) (XLSXR_2) Splitter(TeeFactory): Cloned 40 input feature(s) into 40 output feature(s)
+2019-06-18 13:57:14|   0.8|  0.0|STATS |Regulatory(12) (XLSXR_2) Splitter(TeeFactory): Cloned 135 input feature(s) into 135 output feature(s)
+2019-06-18 13:57:14|   0.8|  0.0|STATS |Warning (11) (XLSXR_2) Splitter(TeeFactory): Cloned 909 input feature(s) into 909 output feature(s)
+2019-06-18 13:57:14|   0.8|  0.0|STATS |Ambient   Road Condition (31) (XLSXR_1) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2019-06-18 13:57:14|   0.8|  0.0|STATS |Public Facilities (21) (XLSXR_1) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2019-06-18 13:57:14|   0.8|  0.0|STATS |Guide(13) (XLSXR_1) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2019-06-18 13:57:14|   0.8|  0.0|STATS |Regulatory(12) (XLSXR_1) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2019-06-18 13:57:14|   0.8|  0.0|STATS |Warning (11) (XLSXR_1) Splitter(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2019-06-18 13:57:14|   0.8|  0.0|STATS |TestFilter_2(TeeFactory): Cloned 1239 input feature(s) into 1239 output feature(s)
+2019-06-18 13:57:14|   0.8|  0.0|STATS |TestFilter_2_Condition_1(TestFactory): Tested 1239 input feature(s) -- 328 feature(s) passed and 911 feature(s) failed
+2019-06-18 13:57:14|   0.8|  0.0|STATS |TestFilter_2_<lt>UNFILTERED<gt>(TeeFactory): Cloned 911 input feature(s) into 911 output feature(s)
+2019-06-18 13:57:14|   0.8|  0.0|STATS |TestFilter_2 HasValue Splitter(TeeFactory): Cloned 328 input feature(s) into 656 output feature(s)
+2019-06-18 13:57:14|   0.8|  0.0|STATS |TestFilter_2 <lt>UNFILTERED<gt> Transformer Output Nuker(TeeFactory): Cloned 911 input feature(s) into 0 output feature(s)
+2019-06-18 13:57:14|   0.8|  0.0|STATS |ListBuilder_2_fme_type_remover(TeeFactory): Cloned 334 input feature(s) into 334 output feature(s)
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Creating writer for format: 
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Using MultiWriter with keyword `TEXTLINE_1_FANOUT' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Writer output will be ordered by input dataset ordering
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Writer `TEXTLINE_1_FANOUT' of type `MULTI_WRITER' using group definition keyword `MULTI_WRITER_DEF'
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Creating writer for format: Text File
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Trying to find a DYNAMIC plugin for writer named `TEXTLINE'
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Loaded module 'TEXTLINE' from file 'C:\Program Files\FME\plugins/TEXTLINE.dll'
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|FME API version of module 'TEXTLINE' matches current internal version (3.8 20180604)
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|FME API version of module 'TEXTLINE' matches current internal version (3.8 20180604)
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Writer `TEXTLINE_1' of type `TEXTLINE' using group definition keyword `TEXTLINE_DEF'
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|FME API version of module 'TEXTLINE' matches current internal version (3.8 20180604)
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Text File Writer: Opening the file 'C:\DATA\GitHub\jetgeo\GIS2OWL\iso14823\TrafficSignClassCode.rdf\'
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Text File Writer: Line Termination: Windows
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Text File Writer: Write the final line termination character: yes
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Text File Writer: Character Encoding: 'utf-8'
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Text File Writer: Write UTF-8 Byte Order Mark: yes
+2019-06-18 13:57:14|   0.9|  0.0|STATS |ListBuilder_2(ListFactory): Combined 334 input feature(s) into 2 output feature(s), including 0 singleton(s)
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|XMLTemplater_2(XMLTemplaterFactory): All features received
+2019-06-18 13:57:14|   0.9|  0.0|STATS |StringReplacer_2(TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2019-06-18 13:57:14|   0.9|  0.0|STATS |StringReplacer_5(TeeFactory): Cloned 2 input feature(s) into 2 output feature(s)
+2019-06-18 13:57:14|   0.9|  0.0|STATS |Destination Feature Type Routing Correlator(RoutingFactory): Tested 2 input feature(s), wrote 2 output feature(s): 0 matched merge filters, 2 were routed to output, 0 could not be routed.
+2019-06-18 13:57:14|   0.9|  0.0|STATS |Final Output Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Text File Writer: Closing the file 'C:\DATA\GitHub\jetgeo\GIS2OWL\iso14823\TrafficSignClassCode.rdf'
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Feature output statistics for `TEXTLINE' writer using keyword `TEXTLINE_1':
+2019-06-18 13:57:14|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|STATS |                               Features Written
+2019-06-18 13:57:14|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|STATS |text_line                                                                    1
+2019-06-18 13:57:14|   0.9|  0.0|STATS |==============================================================================
+2019-06-18 13:57:14|   0.9|  0.0|STATS |Total Features Written                                                       1
+2019-06-18 13:57:14|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|MULTI_WRITER: multi_writer_id `TrafficSignSymbolCode.rdf': Started outputting features
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Creating writer for format: Text File
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Trying to find a DYNAMIC plugin for writer named `TEXTLINE'
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|FME API version of module 'TEXTLINE' matches current internal version (3.8 20180604)
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|FME API version of module 'TEXTLINE' matches current internal version (3.8 20180604)
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Writer `TEXTLINE_1' of type `TEXTLINE' using group definition keyword `TEXTLINE_DEF'
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|FME API version of module 'TEXTLINE' matches current internal version (3.8 20180604)
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Text File Writer: Opening the file 'C:\DATA\GitHub\jetgeo\GIS2OWL\iso14823\TrafficSignSymbolCode.rdf\'
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Text File Writer: Line Termination: Windows
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Text File Writer: Write the final line termination character: yes
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Text File Writer: Character Encoding: 'utf-8'
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Text File Writer: Write UTF-8 Byte Order Mark: yes
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Text File Writer: Closing the file 'C:\DATA\GitHub\jetgeo\GIS2OWL\iso14823\TrafficSignSymbolCode.rdf'
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Feature output statistics for `TEXTLINE' writer using keyword `TEXTLINE_1':
+2019-06-18 13:57:14|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|STATS |                               Features Written
+2019-06-18 13:57:14|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|STATS |text_line                                                                    1
+2019-06-18 13:57:14|   0.9|  0.0|STATS |==============================================================================
+2019-06-18 13:57:14|   0.9|  0.0|STATS |Total Features Written                                                       1
+2019-06-18 13:57:14|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|MULTI_WRITER: multi_writer_id `TrafficSignSymbolCode.rdf': done writing 1 feature(s) 
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Feature output statistics for `MULTI_WRITER' writer using keyword `TEXTLINE_1_FANOUT':
+2019-06-18 13:57:14|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|STATS |                               Features Written
+2019-06-18 13:57:14|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|STATS |text_line                                                                    2
+2019-06-18 13:57:14|   0.9|  0.0|STATS |==============================================================================
+2019-06-18 13:57:14|   0.9|  0.0|STATS |Total Features Written                                                       2
+2019-06-18 13:57:14|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|STATS |                            Features Read Summary
+2019-06-18 13:57:14|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|STATS |Ambient   Road Condition (31)                                               14
+2019-06-18 13:57:14|   0.9|  0.0|STATS |Guide(13)                                                                  141
+2019-06-18 13:57:14|   0.9|  0.0|STATS |Public Facilities (21)                                                      40
+2019-06-18 13:57:14|   0.9|  0.0|STATS |Regulatory(12)                                                             135
+2019-06-18 13:57:14|   0.9|  0.0|STATS |Warning (11)                                                               909
+2019-06-18 13:57:14|   0.9|  0.0|STATS |==============================================================================
+2019-06-18 13:57:14|   0.9|  0.0|STATS |Total Features Read                                                       1239
+2019-06-18 13:57:14|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|STATS |                           Features Written Summary
+2019-06-18 13:57:14|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|STATS |text_line                                                                    2
+2019-06-18 13:57:14|   0.9|  0.0|STATS |==============================================================================
+2019-06-18 13:57:14|   0.9|  0.0|STATS |Total Features Written                                                       2
+2019-06-18 13:57:14|   0.9|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|Translation was SUCCESSFUL with 140 warning(s) (2 feature(s) output)
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|FME Session Duration: 1.0 seconds. (CPU: 0.6s user, 0.3s system)
+2019-06-18 13:57:14|   0.9|  0.0|INFORM|END - ProcessID: 15016, peak process memory usage: 91520 kB, current process memory usage: 53740 kB

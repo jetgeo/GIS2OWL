@@ -1,0 +1,33 @@
+﻿<rdf:RDF xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/iso14823/TrafficSignClassCode#gdd11">
+      <skos:inScheme rdf:resource="https://raw.githubusercontent.com/jetgeo/GIS2OWL/iso14823/TrafficSignClassCode"/>
+      <skos:prefLabel xml:lang="en"></skos:prefLabel>
+      <skos:definition xml:lang="en"></skos:definition>
+  </skos:Concept>
+     <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/iso14823/TrafficSignClassCode#gdd12">
+      <skos:inScheme rdf:resource="https://raw.githubusercontent.com/jetgeo/GIS2OWL/iso14823/TrafficSignClassCode"/>
+      <skos:prefLabel xml:lang="en"></skos:prefLabel>
+      <skos:definition xml:lang="en"></skos:definition>
+  </skos:Concept>
+     <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/iso14823/TrafficSignClassCode#gdd13">
+      <skos:inScheme rdf:resource="https://raw.githubusercontent.com/jetgeo/GIS2OWL/iso14823/TrafficSignClassCode"/>
+      <skos:prefLabel xml:lang="en"></skos:prefLabel>
+      <skos:definition xml:lang="en"></skos:definition>
+  </skos:Concept>
+     <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/iso14823/TrafficSignClassCode#gdd21">
+      <skos:inScheme rdf:resource="https://raw.githubusercontent.com/jetgeo/GIS2OWL/iso14823/TrafficSignClassCode"/>
+      <skos:prefLabel xml:lang="en"></skos:prefLabel>
+      <skos:definition xml:lang="en"></skos:definition>
+  </skos:Concept>
+     <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/iso14823/TrafficSignClassCode#gdd31">
+      <skos:inScheme rdf:resource="https://raw.githubusercontent.com/jetgeo/GIS2OWL/iso14823/TrafficSignClassCode"/>
+      <skos:prefLabel xml:lang="en"></skos:prefLabel>
+      <skos:definition xml:lang="en"></skos:definition>
+  </skos:Concept>
+     <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/iso14823/TrafficSignClassCode#gdd32">
+      <skos:inScheme rdf:resource="https://raw.githubusercontent.com/jetgeo/GIS2OWL/iso14823/TrafficSignClassCode"/>
+      <skos:prefLabel xml:lang="en"></skos:prefLabel>
+      <skos:definition xml:lang="en"></skos:definition>
+  </skos:Concept>
+
+</rdf:RDF>
