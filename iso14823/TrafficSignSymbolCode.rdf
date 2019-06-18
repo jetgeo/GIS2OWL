@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-skosrdfxml.xsl'?>
+<?xml-stylesheet type='text/xsl' href='https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/CodelistDictionary-skosrdfxml.xsl'?>
 <rdf:RDF xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignSymbolCode.rdf#gdd11-111">
       <skos:inScheme rdf:resource="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignSymbolCode.rdf"/>
