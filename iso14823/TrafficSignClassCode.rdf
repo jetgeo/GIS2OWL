@@ -1,35 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type='text/xsl' href='https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/CodelistDictionary-skosrdfxml.xsl'?>
 <rdf:RDF xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-      <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf#gdd11">
+      <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf#warningSign">
       <skos:inScheme rdf:resource="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf"/>
-      <skos:prefLabel xml:lang="en"></skos:prefLabel>
-      <skos:definition xml:lang="en"></skos:definition>
+      <skos:prefLabel xml:lang="en">Danger warning sign</skos:prefLabel>
+          <skos:definition xml:lang="en">Danger warning sign</skos:definition>
   </skos:Concept>
-     <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf#gdd12">
+     <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf#regulatorySign">
       <skos:inScheme rdf:resource="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf"/>
-      <skos:prefLabel xml:lang="en"></skos:prefLabel>
-      <skos:definition xml:lang="en"></skos:definition>
+      <skos:prefLabel xml:lang="en">Regulatory sign</skos:prefLabel>
+      <skos:definition xml:lang="en">Regulatory sign</skos:definition>
   </skos:Concept>
-     <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf#gdd13">
+     <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf#informativeSign">
       <skos:inScheme rdf:resource="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf"/>
-      <skos:prefLabel xml:lang="en"></skos:prefLabel>
-      <skos:definition xml:lang="en"></skos:definition>
+      <skos:prefLabel xml:lang="en">Infomrative sign</skos:prefLabel>
+      <skos:definition xml:lang="en">Infomrative sign</skos:definition>
   </skos:Concept>
-     <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf#gdd21">
+     <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf#publicFacilities">
       <skos:inScheme rdf:resource="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf"/>
-      <skos:prefLabel xml:lang="en"></skos:prefLabel>
-      <skos:definition xml:lang="en"></skos:definition>
+      <skos:prefLabel xml:lang="en">Public facilities</skos:prefLabel>
+      <skos:definition xml:lang="en">Public facilities</skos:definition>
   </skos:Concept>
-     <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf#gdd31">
+     <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf#ambientCondition">
       <skos:inScheme rdf:resource="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf"/>
-      <skos:prefLabel xml:lang="en"></skos:prefLabel>
-      <skos:definition xml:lang="en"></skos:definition>
+      <skos:prefLabel xml:lang="en">Ambient condition</skos:prefLabel>
+      <skos:definition xml:lang="en">Ambient condition</skos:definition>
   </skos:Concept>
-     <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf#gdd32">
+     <skos:Concept rdf:about="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf#roadCondition">
       <skos:inScheme rdf:resource="https://raw.githubusercontent.com/jetgeo/GIS2OWL/master/iso14823/TrafficSignClassCode.rdf"/>
-      <skos:prefLabel xml:lang="en"></skos:prefLabel>
-      <skos:definition xml:lang="en"></skos:definition>
+      <skos:prefLabel xml:lang="en">Road condition</skos:prefLabel>
+      <skos:definition xml:lang="en">Road condition</skos:definition>
   </skos:Concept>
 
 </rdf:RDF>
