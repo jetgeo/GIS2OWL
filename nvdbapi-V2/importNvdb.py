@@ -51,6 +51,6 @@ from nvdb2qgis3 import  nvdb2kart, nvdbsok2qgis
 # import nvdb2qgis3
 # import nvdbapi 
 # imp.reload(nvdb2qgis3 )
-sokeobj = nvdbFagdata(45) 
-sokeobj.addfilter_geo( {'kommune' : 403 }) # Hamar kommune 
+sokeobj = nvdbFagdata(813) 
+sokeobj.addfilter_geo( {'kommune' : 1001 }) # Hamar kommune 
 nvdbsok2qgis( sokeobj) 

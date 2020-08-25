@@ -7,6 +7,8 @@ from qgis.core import QgsProject,  QgsVectorLayer, QgsFeature, QgsGeometry, QgsP
 from nvdbapi import nvdbVegnett, nvdbFagdata, nvdbFagObjekt, finnid
 import requests
 
+#url = "http://rdfspatial.vegdata.no:7200/repositories/nvdb"
+url = "http://localhost:7200/repositories/nvdb"
 
 class memlayerwrap(): 
     """
@@ -51,7 +53,6 @@ class memlayerwrap():
         
 def get_nvdb_ft(vot_id):
     #SPARQL-oppslag på en vegobjekttype
-    url = "http://rdfspatial.vegdata.no:7200/repositories/nvdb"
     query ="""PREFIX nvdb: <http://rdf.vegdata.no/nvdb/nvdb-owl#>
                 SELECT DISTINCT ?uri ?sosinavn
                 WHERE {
@@ -64,7 +65,6 @@ def get_nvdb_ft(vot_id):
 
 def get_nvdb_pt(vot_id,et_id):
     #SPARQL-oppslag på en  egenskapstype 
-    url = "http://rdfspatial.vegdata.no:7200/repositories/nvdb"
     query = """PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
                PREFIX nvdb: <http://rdf.vegdata.no/nvdb/nvdb-owl#>
                PREFIX skos: <http://www.w3.org/2004/02/skos/core#>

@@ -1,0 +1,282 @@
+@prefix : <http://rdf.gdf.org/gdf-owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix lr: <http://www.roadotl.eu/iso19148/def#> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix gsp: <http://www.opengis.net/ont/geosparql#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://rdf.gdf.org/gdf-owl> .
+
+<http://rdf.gdf.org/gdf-owl> rdf:type owl:Ontology ;
+                              owl:imports <http://www.w3.org/2004/02/skos/core> ;
+                              dc:date "2020-08-25" ;
+                              dc:description "Ontology for ISO 20524-1 and 20524-2 Geographic Datafiles (GDF)"@en ;
+                              dcterms:title "GDF 5.1"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://rdf.gdf.org/gdf-owl#AttributeDatatype
+:AttributeDatatype rdf:type owl:AnnotationProperty ;
+                   rdfs:label "Attribute data type"@en ;
+                   rdfs:subPropertyOf :GDF_Code ;
+                   rdfs:range :GDF_Datatype .
+
+
+###  http://rdf.gdf.org/gdf-owl#AttributeTypeCode
+:AttributeTypeCode rdf:type owl:AnnotationProperty ;
+                   rdfs:label "Attribute type"@en ;
+                   rdfs:subPropertyOf :GDF_Code ;
+                   rdfs:range xsd:string .
+
+
+###  http://rdf.gdf.org/gdf-owl#ClassCode
+:ClassCode rdf:type owl:AnnotationProperty ;
+           rdfs:label "Class code"@en ;
+           rdfs:subPropertyOf :GDF_Code ;
+           rdfs:range xsd:integer .
+
+
+###  http://rdf.gdf.org/gdf-owl#GDF_Code
+:GDF_Code rdf:type owl:AnnotationProperty ;
+          rdfs:label "GDF Code"@en ;
+          skos:definition "GDF Code"@en ;
+          rdfs:subPropertyOf :gdf_annotation .
+
+
+###  http://rdf.gdf.org/gdf-owl#SubClassCode
+:SubClassCode rdf:type owl:AnnotationProperty ;
+              rdfs:label "Subclass code"@en ;
+              rdfs:subPropertyOf :GDF_Code ;
+              rdfs:range xsd:integer .
+
+
+###  http://rdf.gdf.org/gdf-owl#ThemeCode
+:ThemeCode rdf:type owl:AnnotationProperty ;
+           rdfs:label "Theme code"@en ;
+           rdfs:subPropertyOf :GDF_Code ;
+           rdfs:range xsd:integer .
+
+
+###  http://rdf.gdf.org/gdf-owl#gdf_annotation
+:gdf_annotation rdf:type owl:AnnotationProperty ;
+                rdfs:label "GDF Annotations"@en ;
+                skos:definition "Main group for annotations on elements in the GDF OTL"@en .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://rdf.gdf.org/gdf-owl#gdf_o_properties
+:gdf_o_properties rdf:type owl:ObjectProperty ;
+                  rdfs:label "GDF Object properties"@en ;
+                  skos:definition "Root property for all GDF object properties (attribute types with value lists)"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://rdf.gdf.org/gdf-owl#gdf_d_properties
+:gdf_d_properties rdf:type owl:DatatypeProperty ;
+                  rdfs:label "GDF Data properites"@en ;
+                  skos:definition "Root property for all GDF data properties (attribute types with primitive values)"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://def.isotc211.org/iso19107/2003/CoordinateGeometry#GM_Polygon
+<http://def.isotc211.org/iso19107/2003/CoordinateGeometry#GM_Polygon> rdf:type owl:Class .
+
+
+###  http://def.isotc211.org/iso19107/2003/GeometricPrimitive#GM_Curve
+<http://def.isotc211.org/iso19107/2003/GeometricPrimitive#GM_Curve> rdf:type owl:Class .
+
+
+###  http://def.isotc211.org/iso19107/2003/GeometricPrimitive#GM_Point
+<http://def.isotc211.org/iso19107/2003/GeometricPrimitive#GM_Point> rdf:type owl:Class .
+
+
+###  http://def.isotc211.org/iso19107/2003/GeometryRoot#GM_Object
+<http://def.isotc211.org/iso19107/2003/GeometryRoot#GM_Object> rdf:type owl:Class .
+
+
+###  http://def.isotc211.org/iso19109/2015/GeneralFeatureModel#AnyFeature
+<http://def.isotc211.org/iso19109/2015/GeneralFeatureModel#AnyFeature> rdf:type owl:Class .
+
+
+###  http://rdf.gdf.org/gdf-owl#BMI
+:BMI rdf:type owl:Class ;
+     rdfs:subClassOf :GDF_Datatype ;
+     rdfs:label "BMI Bitmask integer type"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#BMR
+:BMR rdf:type owl:Class ;
+     rdfs:subClassOf :GDF_Datatype ;
+     rdfs:label "BMR Bitmask register type"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#BOL
+:BOL rdf:type owl:Class ;
+     rdfs:subClassOf :GDF_Datatype ;
+     rdfs:label "BOL Boolean type"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#CMP
+:CMP rdf:type owl:Class ;
+     rdfs:subClassOf :GDF_Datatype ;
+     rdfs:label "CMP Composite type"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#CNT
+:CNT rdf:type owl:Class ;
+     rdfs:subClassOf :GDF_Datatype ;
+     rdfs:label "CNT Number type"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#COD
+:COD rdf:type owl:Class ;
+     rdfs:subClassOf :GDF_Datatype ;
+     rdfs:label "COD Codelist type"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#ENM
+:ENM rdf:type owl:Class ;
+     rdfs:subClassOf :GDF_Datatype ;
+     rdfs:label "ENM Enumeration type"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#GDF_Datatype
+:GDF_Datatype rdf:type owl:Class ;
+              rdfs:subClassOf :GDF_Root ;
+              rdfs:label "GDF Datatype" ,
+                         "Root class for all GDF data types"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#GDF_Feature
+:GDF_Feature rdf:type owl:Class ;
+             rdfs:subClassOf <http://def.isotc211.org/iso19109/2015/GeneralFeatureModel#AnyFeature> ,
+                             :GDF_Root ,
+                             gsp:Feature ;
+             owl:disjointWith :GDF_Valuelist ;
+             rdfs:label "GDF Feature" ;
+             skos:definition "Root class for all GDF Features"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#GDF_Relationship
+:GDF_Relationship rdf:type owl:Class ;
+                  rdfs:subClassOf <http://def.isotc211.org/iso19109/2015/GeneralFeatureModel#AnyFeature> ,
+                                  :GDF_Root ,
+                                  gsp:Feature ;
+                  rdfs:label "GDF Relationship" ;
+                  skos:definition "Root class for all GDF Relationships"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#GDF_Root
+:GDF_Root rdf:type owl:Class ;
+          rdfs:label "GDF Root"@en ;
+          skos:definition "Root class for GDF"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#GDF_Valuelist
+:GDF_Valuelist rdf:type owl:Class ;
+               rdfs:subClassOf :GDF_Root ;
+               rdfs:label "GDF Valuelist" ;
+               skos:definition "Root class for all GDF Enumerations and Codelists"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#GSD
+:GSD rdf:type owl:Class ;
+     rdfs:subClassOf :GDF_Datatype ;
+     rdfs:label "GSD Geopolitical structure definition type"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#IDN
+:IDN rdf:type owl:Class ;
+     rdfs:subClassOf :GDF_Datatype ;
+     rdfs:label "IDN Identifier type"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#MSR
+:MSR rdf:type owl:Class ;
+     rdfs:subClassOf :GDF_Datatype ;
+     rdfs:label "MSR Measure type"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#PRC
+:PRC rdf:type owl:Class ;
+     rdfs:subClassOf :GDF_Datatype ;
+     rdfs:label "PRC Percentage type"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#SCS
+:SCS rdf:type owl:Class ;
+     rdfs:subClassOf :GDF_Datatype ;
+     rdfs:label "SCR Simple character string type"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#SRS
+:SRS rdf:type owl:Class ;
+     rdfs:subClassOf :GDF_Datatype ;
+     rdfs:label "SRS Signed percentage type"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#TMR
+:TMR rdf:type owl:Class ;
+     rdfs:subClassOf :GDF_Datatype ;
+     rdfs:label "TMR Time domain type"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#TXT
+:TXT rdf:type owl:Class ;
+     rdfs:subClassOf :GDF_Datatype ;
+     rdfs:label "TXT Language coded text type"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#Feature
+gsp:Feature rdf:type owl:Class .
+
+
+###  http://www.opengis.net/ont/sf#Curve
+sf:Curve rdf:type owl:Class .
+
+
+###  http://www.opengis.net/ont/sf#Point
+sf:Point rdf:type owl:Class .
+
+
+###  http://www.opengis.net/ont/sf#Polygon
+sf:Polygon rdf:type owl:Class .
+
+
+###  http://www.roadotl.eu/iso19148/def#LinearAtLocation
+lr:LinearAtLocation rdf:type owl:Class .
+
+
+###  http://www.roadotl.eu/iso19148/def#LinearEventLocation
+lr:LinearEventLocation rdf:type owl:Class .
+
+
+###  http://www.roadotl.eu/iso19148/def#LinearFromToLocation
+lr:LinearFromToLocation rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
