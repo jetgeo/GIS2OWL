@@ -19,6 +19,10 @@
 #    Classes
 #################################################################
 
+###  http://rdf.gdf.org/gdf-owl#FC_7240
+gdf:FC_7240 owl:equivalentClass <http://rdf.vegdata.no/nvdb/nvdb-owl#vot174> .
+
+
 ###  http://rdf.gdf.org/gdf-owl#FSC_7290_205
 gdf:FSC_7290_205 rdf:type owl:Class ;
                  owl:equivalentClass <http://rdf.vegdata.no/nvdb/nvdb-owl#vot7> .
@@ -35,6 +39,8 @@ gdf:FSC_7290_211 rdf:type owl:Class ;
 
 
 ###  http://rdf.vegdata.no/nvdb/nvdb-owl#vot103
+
+###  http://rdf.vegdata.no/nvdb/nvdb-owl#vot174
 
 ###  http://rdf.vegdata.no/nvdb/nvdb-owl#vot5
 <http://rdf.vegdata.no/nvdb/nvdb-owl#vot5> rdfs:subClassOf ifc:IfcRailing .
