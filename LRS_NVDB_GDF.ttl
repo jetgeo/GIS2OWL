@@ -20,15 +20,18 @@
 #################################################################
 
 ###  http://rdf.gdf.org/gdf-owl#FSC_7290_205
-gdf:FSC_7290_205 owl:equivalentClass <http://rdf.vegdata.no/nvdb/nvdb-owl#vot7> .
+gdf:FSC_7290_205 rdf:type owl:Class ;
+                 owl:equivalentClass <http://rdf.vegdata.no/nvdb/nvdb-owl#vot7> .
 
 
 ###  http://rdf.gdf.org/gdf-owl#FSC_7290_206
-gdf:FSC_7290_206 owl:equivalentClass <http://rdf.vegdata.no/nvdb/nvdb-owl#vot5> .
+gdf:FSC_7290_206 rdf:type owl:Class ;
+                 owl:equivalentClass <http://rdf.vegdata.no/nvdb/nvdb-owl#vot5> .
 
 
 ###  http://rdf.gdf.org/gdf-owl#FSC_7290_211
-gdf:FSC_7290_211 owl:equivalentClass <http://rdf.vegdata.no/nvdb/nvdb-owl#vot103> .
+gdf:FSC_7290_211 rdf:type owl:Class ;
+                 owl:equivalentClass <http://rdf.vegdata.no/nvdb/nvdb-owl#vot103> .
 
 
 ###  http://rdf.vegdata.no/nvdb/nvdb-owl#vot103
