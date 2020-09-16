@@ -4608,6 +4608,12 @@ dc:description rdf:type owl:AnnotationProperty .
                            rdfs:label "Geometry location reference"@en .
 
 
+###  http://rdf.gdf.org/gdf-owl#InterpolativeLinearReferencingMethod
+:InterpolativeLinearReferencingMethod rdf:type owl:Class ;
+                                      rdfs:subClassOf :LinearReferencingMethod ;
+                                      rdfs:label "Interpolative Linear Referencing Method"@en .
+
+
 ###  http://rdf.gdf.org/gdf-owl#LinearLocationReference
 :LinearLocationReference rdf:type owl:Class ;
                          rdfs:subClassOf :PreCodedLocationReference ,
