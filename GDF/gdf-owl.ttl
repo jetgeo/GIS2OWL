@@ -1484,10 +1484,10 @@ dc:description rdf:type owl:AnnotationProperty .
 
 
 ###  http://rdf.gdf.org/gdf-owl#locationReference
-<http://rdf.gdf.org/gdf-owl#locationReference> rdf:type owl:ObjectProperty ;
-                                                        rdfs:domain :GDF_Feature ;
-                                                        rdfs:range <http://rdf.gdf.org/gdf-owl#abstractLocationReference> ;
-                                                        rdfs:label "Location reference"@en .
+:locationReference rdf:type owl:ObjectProperty ;
+                   rdfs:domain :GDF_Feature ;
+                   rdfs:range :abstractLocationReference ;
+                   rdfs:label "Location reference"@en .
 
 
 #################################################################
@@ -5353,52 +5353,81 @@ dc:description rdf:type owl:AnnotationProperty .
 
 
 ###  http://rdf.gdf.org/gdf-owl#abstractLocationReference
-<http://rdf.gdf.org/gdf-owl#abstractLocationReference> rdf:type owl:Class ;
-                                                                rdfs:label "Location reference"@en .
+:abstractLocationReference rdf:type owl:Class ;
+                           rdfs:label "Location reference"@en .
 
 
 ###  http://rdf.gdf.org/gdf-owl#agoraLocationReference
-<http://rdf.gdf.org/gdf-owl#agoraLocationReference> rdf:type owl:Class ;
-                                                             rdfs:subClassOf <http://rdf.gdf.org/gdf-owl#dynamicLocationReference> ;
-                                                             rdfs:label "AGORA location reference"@en .
+:agoraLocationReference rdf:type owl:Class ;
+                        rdfs:subClassOf :dynamicLocationReference ;
+                        rdfs:label "AGORA location reference"@en .
 
 
 ###  http://rdf.gdf.org/gdf-owl#dynamicLocationReference
-<http://rdf.gdf.org/gdf-owl#dynamicLocationReference> rdf:type owl:Class ;
-                                                               rdfs:subClassOf <http://rdf.gdf.org/gdf-owl#abstractLocationReference> ;
-                                                               rdfs:label "Dynamic location reference"@en .
+:dynamicLocationReference rdf:type owl:Class ;
+                          rdfs:subClassOf :abstractLocationReference ;
+                          rdfs:label "Dynamic location reference"@en .
 
 
 ###  http://rdf.gdf.org/gdf-owl#geometryLocationReference
-<http://rdf.gdf.org/gdf-owl#geometryLocationReference> rdf:type owl:Class ;
-                                                                rdfs:subClassOf <http://rdf.gdf.org/gdf-owl#abstractLocationReference> ,
-                                                                                gsp:Geometry ;
-                                                                rdfs:label "Geometry location reference"@en .
+:geometryLocationReference rdf:type owl:Class ;
+                           rdfs:subClassOf :abstractLocationReference ,
+                                           gsp:Geometry ;
+                           rdfs:label "Geometry location reference"@en .
 
 
 ###  http://rdf.gdf.org/gdf-owl#linearLocationReference
-<http://rdf.gdf.org/gdf-owl#linearLocationReference> rdf:type owl:Class ;
-                                                              rdfs:subClassOf <http://rdf.gdf.org/gdf-owl#preCodedLocationReference> ,
-                                                                              lr:LinearEventLocation ;
-                                                              rdfs:label "Linear location reference"@en .
+:linearLocationReference rdf:type owl:Class ;
+                         rdfs:subClassOf :preCodedLocationReference ,
+                                         lr:LinearEventLocation ;
+                         rdfs:label "Linear location reference"@en .
 
 
 ###  http://rdf.gdf.org/gdf-owl#locationByExternalReference
-<http://rdf.gdf.org/gdf-owl#locationByExternalReference> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf <http://rdf.gdf.org/gdf-owl#preCodedLocationReference> ;
-                                                                  rdfs:label "Location by external reference"@en .
+:locationByExternalReference rdf:type owl:Class ;
+                             rdfs:subClassOf :preCodedLocationReference ;
+                             rdfs:label "Location by external reference"@en .
 
 
 ###  http://rdf.gdf.org/gdf-owl#openLrLocationReference
-<http://rdf.gdf.org/gdf-owl#openLrLocationReference> rdf:type owl:Class ;
-                                                              rdfs:subClassOf <http://rdf.gdf.org/gdf-owl#dynamicLocationReference> ;
-                                                              rdfs:label "OpenLR location reference"@en .
+:openLrLocationReference rdf:type owl:Class ;
+                         rdfs:subClassOf :dynamicLocationReference ;
+                         rdfs:label "OpenLR location reference"@en .
 
 
 ###  http://rdf.gdf.org/gdf-owl#preCodedLocationReference
-<http://rdf.gdf.org/gdf-owl#preCodedLocationReference> rdf:type owl:Class ;
-                                                                rdfs:subClassOf <http://rdf.gdf.org/gdf-owl#abstractLocationReference> ;
-                                                                rdfs:label "Pre-coded location reference"@en .
+:preCodedLocationReference rdf:type owl:Class ;
+                           rdfs:subClassOf :abstractLocationReference ;
+                           rdfs:label "Pre-coded location reference"@en .
+
+
+###  http://rdf.vegdata.no/nvdb/nvdb-owl#ClsNetworkReference
+<http://rdf.vegdata.no/nvdb/nvdb-owl#ClsNetworkReference> rdf:type owl:Class ;
+                                                          rdfs:subClassOf :linearLocationReference ;
+                                                          rdfs:label "Network reference"@en .
+
+
+###  http://rdf.vegdata.no/nvdb/nvdb-owl#LinkReference
+<http://rdf.vegdata.no/nvdb/nvdb-owl#LinkReference> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://rdf.vegdata.no/nvdb/nvdb-owl#ClsNetworkReference> ;
+                                                    rdfs:label "Link reference"@en .
+
+
+###  http://rdf.vegdata.no/nvdb/nvdb-owl#NetworkElement
+<http://rdf.vegdata.no/nvdb/nvdb-owl#NetworkElement> rdf:type owl:Class ;
+                                                     rdfs:label "Network element"@en .
+
+
+###  http://rdf.vegdata.no/nvdb/nvdb-owl#SimpleLinearReference
+<http://rdf.vegdata.no/nvdb/nvdb-owl#SimpleLinearReference> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://rdf.vegdata.no/nvdb/nvdb-owl#LinkReference> ;
+                                                            rdfs:label "Simple linear reference"@en .
+
+
+###  http://rdf.vegdata.no/nvdb/nvdb-owl#SimplePointReference
+<http://rdf.vegdata.no/nvdb/nvdb-owl#SimplePointReference> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://rdf.vegdata.no/nvdb/nvdb-owl#LinkReference> ;
+                                                           rdfs:label "Simple point reference"@en .
 
 
 ###  http://www.opengis.net/ont/geosparql#Feature
