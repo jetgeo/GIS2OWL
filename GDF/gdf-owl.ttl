@@ -1477,6 +1477,11 @@ dc:description rdf:type owl:AnnotationProperty .
         rdfs:label "Pedestrian Crossing Level"^^xsd:string .
 
 
+###  http://rdf.gdf.org/gdf-owl#applicableDirection
+:applicableDirection rdf:type owl:ObjectProperty ;
+                     rdfs:label "Applicable direction for network reference"@en .
+
+
 ###  http://rdf.gdf.org/gdf-owl#atPosition
 :atPosition rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :lrPosition ;
