@@ -1490,16 +1490,16 @@ dc:description rdf:type owl:AnnotationProperty .
                    rdfs:label "Location reference"@en .
 
 
-###  http://rdf.vegdata.no/nvdb/nvdb-owl#networkReference
-<http://rdf.vegdata.no/nvdb/nvdb-owl#networkReference> rdf:type owl:ObjectProperty ;
+###  http://rdf.gdf.org/gdf-owl#networkReference
+<http://rdf.gdf.org/gdf-owl#networkReference> rdf:type owl:ObjectProperty ;
                                                        rdfs:domain :LinearLocationReference ;
-                                                       rdfs:range <http://rdf.vegdata.no/nvdb/nvdb-owl#ClsNetworkReference> ;
+                                                       rdfs:range <http://rdf.gdf.org/gdf-owl#ClsNetworkReference> ;
                                                        rdfs:label "Network reference"@en .
 
 
-###  http://rdf.vegdata.no/nvdb/nvdb-owl#overridingLRM
-<http://rdf.vegdata.no/nvdb/nvdb-owl#overridingLRM> rdf:type owl:ObjectProperty ;
-                                                    rdfs:domain <http://rdf.vegdata.no/nvdb/nvdb-owl#ClsNetworkReference> ;
+###  http://rdf.gdf.org/gdf-owl#overridingLRM
+<http://rdf.gdf.org/gdf-owl#overridingLRM> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <http://rdf.gdf.org/gdf-owl#ClsNetworkReference> ;
                                                     rdfs:label "Overriding location referencing method"@en .
 
 
@@ -5414,32 +5414,32 @@ dc:description rdf:type owl:AnnotationProperty .
        rdfs:label "Pedestrian Crossing Level Value"^^xsd:string .
 
 
-###  http://rdf.vegdata.no/nvdb/nvdb-owl#ClsNetworkReference
-<http://rdf.vegdata.no/nvdb/nvdb-owl#ClsNetworkReference> rdf:type owl:Class ;
+###  http://rdf.gdf.org/gdf-owl#ClsNetworkReference
+<http://rdf.gdf.org/gdf-owl#ClsNetworkReference> rdf:type owl:Class ;
                                                           rdfs:subClassOf :LinearLocationReference ;
                                                           rdfs:label "Network reference"@en .
 
 
-###  http://rdf.vegdata.no/nvdb/nvdb-owl#LinkReference
-<http://rdf.vegdata.no/nvdb/nvdb-owl#LinkReference> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <http://rdf.vegdata.no/nvdb/nvdb-owl#ClsNetworkReference> ;
+###  http://rdf.gdf.org/gdf-owl#LinkReference
+<http://rdf.gdf.org/gdf-owl#LinkReference> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://rdf.gdf.org/gdf-owl#ClsNetworkReference> ;
                                                     rdfs:label "Link reference"@en .
 
 
-###  http://rdf.vegdata.no/nvdb/nvdb-owl#NetworkElement
-<http://rdf.vegdata.no/nvdb/nvdb-owl#NetworkElement> rdf:type owl:Class ;
+###  http://rdf.gdf.org/gdf-owl#NetworkElement
+<http://rdf.gdf.org/gdf-owl#NetworkElement> rdf:type owl:Class ;
                                                      rdfs:label "Network element"@en .
 
 
-###  http://rdf.vegdata.no/nvdb/nvdb-owl#SimpleLinearReference
-<http://rdf.vegdata.no/nvdb/nvdb-owl#SimpleLinearReference> rdf:type owl:Class ;
-                                                            rdfs:subClassOf <http://rdf.vegdata.no/nvdb/nvdb-owl#LinkReference> ;
+###  http://rdf.gdf.org/gdf-owl#SimpleLinearReference
+<http://rdf.gdf.org/gdf-owl#SimpleLinearReference> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://rdf.gdf.org/gdf-owl#LinkReference> ;
                                                             rdfs:label "Simple linear reference"@en .
 
 
-###  http://rdf.vegdata.no/nvdb/nvdb-owl#SimplePointReference
-<http://rdf.vegdata.no/nvdb/nvdb-owl#SimplePointReference> rdf:type owl:Class ;
-                                                           rdfs:subClassOf <http://rdf.vegdata.no/nvdb/nvdb-owl#LinkReference> ;
+###  http://rdf.gdf.org/gdf-owl#SimplePointReference
+<http://rdf.gdf.org/gdf-owl#SimplePointReference> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://rdf.gdf.org/gdf-owl#LinkReference> ;
                                                            rdfs:label "Simple point reference"@en .
 
 
