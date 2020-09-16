@@ -1477,6 +1477,23 @@ dc:description rdf:type owl:AnnotationProperty .
         rdfs:label "Pedestrian Crossing Level"^^xsd:string .
 
 
+###  http://rdf.gdf.org/gdf-owl#atPosition
+:atPosition rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :lrPosition ;
+            rdfs:label "At linear position"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#distanceAlong
+:distanceAlong rdf:type owl:ObjectProperty ;
+               rdfs:label "Linear distance along"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#fromPosition
+:fromPosition rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :lrPosition ;
+              rdfs:label "From linear position"@en .
+
+
 ###  http://rdf.gdf.org/gdf-owl#gdf_o_properties
 :gdf_o_properties rdf:type owl:ObjectProperty ;
                   rdfs:label "GDF Object properties"@en ;
@@ -1490,17 +1507,28 @@ dc:description rdf:type owl:AnnotationProperty .
                    rdfs:label "Location reference"@en .
 
 
+###  http://rdf.gdf.org/gdf-owl#lrPosition
+:lrPosition rdf:type owl:ObjectProperty ;
+            rdfs:label "Linear position"@en .
+
+
 ###  http://rdf.gdf.org/gdf-owl#networkReference
-<http://rdf.gdf.org/gdf-owl#networkReference> rdf:type owl:ObjectProperty ;
-                                                       rdfs:domain :LinearLocationReference ;
-                                                       rdfs:range <http://rdf.gdf.org/gdf-owl#ClsNetworkReference> ;
-                                                       rdfs:label "Network reference"@en .
+:networkReference rdf:type owl:ObjectProperty ;
+                  rdfs:domain :LinearLocationReference ;
+                  rdfs:range :ClsNetworkReference ;
+                  rdfs:label "Network reference"@en .
 
 
 ###  http://rdf.gdf.org/gdf-owl#overridingLRM
-<http://rdf.gdf.org/gdf-owl#overridingLRM> rdf:type owl:ObjectProperty ;
-                                                    rdfs:domain <http://rdf.gdf.org/gdf-owl#ClsNetworkReference> ;
-                                                    rdfs:label "Overriding location referencing method"@en .
+:overridingLRM rdf:type owl:ObjectProperty ;
+               rdfs:domain :ClsNetworkReference ;
+               rdfs:label "Overriding location referencing method"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#toPosition
+:toPosition rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :lrPosition ;
+            rdfs:label "To linear position"@en .
 
 
 #################################################################
@@ -2740,6 +2768,17 @@ dc:description rdf:type owl:AnnotationProperty .
 :AgoraLocationReference rdf:type owl:Class ;
                         rdfs:subClassOf :DynamicLocationReference ;
                         rdfs:label "AGORA location reference"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#ClsNetworkReference
+:ClsNetworkReference rdf:type owl:Class ;
+                     rdfs:subClassOf :LinearLocationReference ;
+                     rdfs:label "Network reference"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#DistanceExpression
+:DistanceExpression rdf:type owl:Class ;
+                    rdfs:label "Linear reference distance expression"@en .
 
 
 ###  http://rdf.gdf.org/gdf-owl#DynamicLocationReference
@@ -4572,10 +4611,21 @@ dc:description rdf:type owl:AnnotationProperty .
                          rdfs:label "Linear location reference"@en .
 
 
+###  http://rdf.gdf.org/gdf-owl#LinkReference
+:LinkReference rdf:type owl:Class ;
+               rdfs:subClassOf :ClsNetworkReference ;
+               rdfs:label "Link reference"@en .
+
+
 ###  http://rdf.gdf.org/gdf-owl#LocationByExternalReference
 :LocationByExternalReference rdf:type owl:Class ;
                              rdfs:subClassOf :PreCodedLocationReference ;
                              rdfs:label "Location by external reference"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#NetworkElement
+:NetworkElement rdf:type owl:Class ;
+                rdfs:label "Network element"@en .
 
 
 ###  http://rdf.gdf.org/gdf-owl#OpenLrLocationReference
@@ -4592,6 +4642,18 @@ dc:description rdf:type owl:AnnotationProperty .
 :PreCodedLocationReference rdf:type owl:Class ;
                            rdfs:subClassOf :AbstractLocationReference ;
                            rdfs:label "Pre-coded location reference"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#SimpleLinearReference
+:SimpleLinearReference rdf:type owl:Class ;
+                       rdfs:subClassOf :LinkReference ;
+                       rdfs:label "Simple linear reference"@en .
+
+
+###  http://rdf.gdf.org/gdf-owl#SimplePointReference
+:SimplePointReference rdf:type owl:Class ;
+                      rdfs:subClassOf :LinkReference ;
+                      rdfs:label "Simple point reference"@en .
 
 
 ###  http://rdf.gdf.org/gdf-owl#UserDefined
@@ -5412,35 +5474,6 @@ dc:description rdf:type owl:AnnotationProperty .
        :AttributeDatatype "COD"^^xsd:string ;
        :AttributeTypeCode "XD"^^xsd:string ;
        rdfs:label "Pedestrian Crossing Level Value"^^xsd:string .
-
-
-###  http://rdf.gdf.org/gdf-owl#ClsNetworkReference
-<http://rdf.gdf.org/gdf-owl#ClsNetworkReference> rdf:type owl:Class ;
-                                                          rdfs:subClassOf :LinearLocationReference ;
-                                                          rdfs:label "Network reference"@en .
-
-
-###  http://rdf.gdf.org/gdf-owl#LinkReference
-<http://rdf.gdf.org/gdf-owl#LinkReference> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <http://rdf.gdf.org/gdf-owl#ClsNetworkReference> ;
-                                                    rdfs:label "Link reference"@en .
-
-
-###  http://rdf.gdf.org/gdf-owl#NetworkElement
-<http://rdf.gdf.org/gdf-owl#NetworkElement> rdf:type owl:Class ;
-                                                     rdfs:label "Network element"@en .
-
-
-###  http://rdf.gdf.org/gdf-owl#SimpleLinearReference
-<http://rdf.gdf.org/gdf-owl#SimpleLinearReference> rdf:type owl:Class ;
-                                                            rdfs:subClassOf <http://rdf.gdf.org/gdf-owl#LinkReference> ;
-                                                            rdfs:label "Simple linear reference"@en .
-
-
-###  http://rdf.gdf.org/gdf-owl#SimplePointReference
-<http://rdf.gdf.org/gdf-owl#SimplePointReference> rdf:type owl:Class ;
-                                                           rdfs:subClassOf <http://rdf.gdf.org/gdf-owl#LinkReference> ;
-                                                           rdfs:label "Simple point reference"@en .
 
 
 ###  http://www.opengis.net/ont/geosparql#Feature
