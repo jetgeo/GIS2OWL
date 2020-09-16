@@ -1497,6 +1497,12 @@ dc:description rdf:type owl:AnnotationProperty .
                                                        rdfs:label "Network reference"@en .
 
 
+###  http://rdf.vegdata.no/nvdb/nvdb-owl#overridingLRM
+<http://rdf.vegdata.no/nvdb/nvdb-owl#overridingLRM> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <http://rdf.vegdata.no/nvdb/nvdb-owl#ClsNetworkReference> ;
+                                                    rdfs:label "Overriding location referencing method"@en .
+
+
 #################################################################
 #    Data properties
 #################################################################
