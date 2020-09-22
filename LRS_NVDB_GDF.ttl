@@ -5,37 +5,124 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix nvdb: <http://rdf.vegdata.no/nvdb/nvdb-owl> .
+@prefix nvdb: <http://rdf.vegdata.no/nvdb/nvdb-owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix v440: <http://rdf.vegdata.no/V440/v440-owl#> .
 @base <http://rdf.vegdata.no/nvdb/lrs_nvdb_gdf> .
 
 <http://rdf.vegdata.no/nvdb/lrs_nvdb_gdf> rdf:type owl:Ontology ;
                                            owl:imports <http://rdf.gdf.org/gdf-owl> ,
-                                                       <http://rdf.vegdata.no/nvdb/nvdb-owl> ,
-                                                       <http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL> .
+                                                       <http://rdf.vegdata.no/nvdb/nvdb-owl> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://rdf.gdf.org/gdf-owl#OTP_XA
+gdf:OTP_XA owl:equivalentProperty nvdb:et8738 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource gdf:OTP_XA ;
+   owl:annotatedProperty owl:equivalentProperty ;
+   owl:annotatedTarget nvdb:et8738 ;
+   rdfs:comment "GDF Pedestrian Crossing Type equals NVDB markeringAvStriper"@en
+ ] .
+
+
+###  http://rdf.gdf.org/gdf-owl#OTP_XC
+gdf:OTP_XC owl:equivalentProperty nvdb:et2034 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource gdf:OTP_XC ;
+   owl:annotatedProperty owl:equivalentProperty ;
+   owl:annotatedTarget nvdb:et2034 ;
+   rdfs:comment "GDF pedestrianCrossingPriority equals NVDB lysregulert"@en
+ ] .
+
+
+###  http://rdf.vegdata.no/nvdb/nvdb-owl#et2034
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource gdf:OTP_XC ;
+  owl:annotatedProperty owl:equivalentProperty ;
+  owl:annotatedTarget nvdb:et2034 ;
+  rdfs:comment "GDF pedestrianCrossingPriority equals NVDB lysregulert"@en
+] .
+
+
+###  http://rdf.vegdata.no/nvdb/nvdb-owl#et8738
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource gdf:OTP_XA ;
+  owl:annotatedProperty owl:equivalentProperty ;
+  owl:annotatedTarget nvdb:et8738 ;
+  rdfs:comment "GDF Pedestrian Crossing Type equals NVDB markeringAvStriper"@en
+] .
+
 
 #################################################################
 #    Classes
 #################################################################
 
 ###  http://rdf.gdf.org/gdf-owl#FC_7240
-gdf:FC_7240 owl:equivalentClass <http://rdf.vegdata.no/nvdb/nvdb-owl#vot174> .
+gdf:FC_7240 owl:equivalentClass nvdb:vot174 .
 
 
 ###  http://rdf.gdf.org/gdf-owl#FSC_7290_205
 gdf:FSC_7290_205 rdf:type owl:Class ;
-                 owl:equivalentClass <http://rdf.vegdata.no/nvdb/nvdb-owl#vot7> .
+                 owl:equivalentClass nvdb:vot7 .
 
 
 ###  http://rdf.gdf.org/gdf-owl#FSC_7290_206
 gdf:FSC_7290_206 rdf:type owl:Class ;
-                 owl:equivalentClass <http://rdf.vegdata.no/nvdb/nvdb-owl#vot5> .
+                 owl:equivalentClass nvdb:vot5 .
 
 
 ###  http://rdf.gdf.org/gdf-owl#FSC_7290_211
 gdf:FSC_7290_211 rdf:type owl:Class ;
-                 owl:equivalentClass <http://rdf.vegdata.no/nvdb/nvdb-owl#vot103> .
+                 owl:equivalentClass nvdb:vot103 .
+
+
+###  http://rdf.vegdata.no/nvdb/lrs_nvdb_gdf#PedestrianCrossing_level_streetLevelCrossing
+:PedestrianCrossing_level_streetLevelCrossing rdf:type owl:Class ;
+                                              owl:equivalentClass nvdb:vot174 ;
+                                              rdfs:subClassOf gdf:FC_7240 ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty gdf:OTP_XD ;
+                                                                owl:hasValue gdf:VAL_XD_1
+                                                              ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :PedestrianCrossing_level_streetLevelCrossing ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty gdf:OTP_XD ;
+                         owl:hasValue gdf:VAL_XD_1
+                       ] ;
+   rdfs:comment "All NVDB Gangfelt are GDF PedestrianCrossing.level.streetLevelCrossing"@en
+ ] .
+
+
+###  http://rdf.vegdata.no/nvdb/lrs_nvdb_gdf#PedestrianCrossing_signage_passiveTrafficSigns
+:PedestrianCrossing_signage_passiveTrafficSigns rdf:type owl:Class ;
+                                                owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty nvdb:et2033 ;
+                                                                                             owl:hasValue nvdb:tv3538
+                                                                                           ]
+                                                                                           [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty nvdb:et2034 ;
+                                                                                             owl:hasValue nvdb:tv3539
+                                                                                           ]
+                                                                                         ) ;
+                                                                      rdf:type owl:Class
+                                                                    ] ;
+                                                rdfs:subClassOf gdf:FC_7240 ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty gdf:OTP_XB ;
+                                                                  owl:hasValue gdf:VAL_XB_1
+                                                                ] .
+
+
+###  http://rdf.vegdata.no/nvdb/lrs_nvdb_gdf#Sandbox
+:Sandbox rdf:type owl:Class .
 
 
 ###  http://rdf.vegdata.no/nvdb/nvdb-owl#vot103
@@ -43,11 +130,141 @@ gdf:FSC_7290_211 rdf:type owl:Class ;
 ###  http://rdf.vegdata.no/nvdb/nvdb-owl#vot174
 
 ###  http://rdf.vegdata.no/nvdb/nvdb-owl#vot5
-<http://rdf.vegdata.no/nvdb/nvdb-owl#vot5> rdfs:subClassOf ifc:IfcRailing .
+nvdb:vot5 rdfs:subClassOf ifc:IfcRailing .
 
 
 ###  http://rdf.vegdata.no/nvdb/nvdb-owl#vot7
-<http://rdf.vegdata.no/nvdb/nvdb-owl#vot7> rdfs:subClassOf ifc:IfcRailing .
+nvdb:vot7 rdfs:subClassOf ifc:IfcRailing .
+
+
+###  http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcRailing
+ifc:IfcRailing rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://rdf.gdf.org/gdf-owl#OTP_XB_1
+gdf:OTP_XB_1 rdf:type owl:NamedIndividual .
+
+
+###  http://rdf.gdf.org/gdf-owl#VAL_XA_0
+gdf:VAL_XA_0 owl:sameAs nvdb:tv11568 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource gdf:VAL_XA_0 ;
+   owl:annotatedProperty owl:sameAs ;
+   owl:annotatedTarget nvdb:tv11568 ;
+   rdfs:comment "GDF type noRoadMarkings sameAs NVDB markeringAvStriper ikkeStriper"@en
+ ] .
+
+
+###  http://rdf.gdf.org/gdf-owl#VAL_XA_2
+gdf:VAL_XA_2 owl:sameAs nvdb:tv11555 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource gdf:VAL_XA_2 ;
+   owl:annotatedProperty owl:sameAs ;
+   owl:annotatedTarget nvdb:tv11555 ;
+   rdfs:comment "GDF type zebraCrossingWithOrWithoutAdditionalConstructiveAids sameAs NVDB markeringAvStriper malteStriper"@en
+ ] .
+
+
+###  http://rdf.gdf.org/gdf-owl#VAL_XB_0
+gdf:VAL_XB_0 owl:sameAs nvdb:tv3576 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource gdf:VAL_XB_0 ;
+   owl:annotatedProperty owl:sameAs ;
+   owl:annotatedTarget nvdb:tv3576 ;
+   rdfs:comment "GDF noTrafficSigns sameAs NVDB skiltet.nei"@en
+ ] .
+
+
+###  http://rdf.gdf.org/gdf-owl#VAL_XB_3
+gdf:VAL_XB_3 owl:sameAs nvdb:tv3539 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource gdf:VAL_XB_3 ;
+   owl:annotatedProperty owl:sameAs ;
+   owl:annotatedTarget nvdb:tv3539 ;
+   rdfs:comment "GDF trafficLightRegulated sameAs NVDB lysregulert.ja"@en
+ ] .
+
+
+###  http://rdf.gdf.org/gdf-owl#VAL_XC_1
+gdf:VAL_XC_1 owl:sameAs nvdb:tv3577 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource gdf:VAL_XC_1 ;
+   owl:annotatedProperty owl:sameAs ;
+   owl:annotatedTarget nvdb:tv3577 ;
+   rdfs:comment "GDF pedestrianCrossingPriority.pedestriansOverRoadTraffic sameAs NVDB lysregulert.nei"@en
+ ] .
+
+
+###  http://rdf.gdf.org/gdf-owl#VAL_XC_2
+gdf:VAL_XC_2 owl:sameAs nvdb:tv3539 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource gdf:VAL_XC_2 ;
+   owl:annotatedProperty owl:sameAs ;
+   owl:annotatedTarget nvdb:tv3539 ;
+   rdfs:comment "GDF pedestrianCrossingPriority.pedestriansOverRoadTrafficOnRequest sameAs NVDB lysregulert.ja"@en
+ ] .
+
+
+###  http://rdf.vegdata.no/nvdb/nvdb-owl#tv11555
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource gdf:VAL_XA_2 ;
+  owl:annotatedProperty owl:sameAs ;
+  owl:annotatedTarget nvdb:tv11555 ;
+  rdfs:comment "GDF type zebraCrossingWithOrWithoutAdditionalConstructiveAids sameAs NVDB markeringAvStriper malteStriper"@en
+] .
+
+
+###  http://rdf.vegdata.no/nvdb/nvdb-owl#tv11568
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource gdf:VAL_XA_0 ;
+  owl:annotatedProperty owl:sameAs ;
+  owl:annotatedTarget nvdb:tv11568 ;
+  rdfs:comment "GDF type noRoadMarkings sameAs NVDB markeringAvStriper ikkeStriper"@en
+] .
+
+
+###  http://rdf.vegdata.no/nvdb/nvdb-owl#tv3539
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource gdf:VAL_XB_3 ;
+  owl:annotatedProperty owl:sameAs ;
+  owl:annotatedTarget nvdb:tv3539 ;
+  rdfs:comment "GDF trafficLightRegulated sameAs NVDB lysregulert.ja"@en
+] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource gdf:VAL_XC_2 ;
+   owl:annotatedProperty owl:sameAs ;
+   owl:annotatedTarget nvdb:tv3539 ;
+   rdfs:comment "GDF pedestrianCrossingPriority.pedestriansOverRoadTrafficOnRequest sameAs NVDB lysregulert.ja"@en
+ ] .
+
+
+###  http://rdf.vegdata.no/nvdb/nvdb-owl#tv3576
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource gdf:VAL_XB_0 ;
+  owl:annotatedProperty owl:sameAs ;
+  owl:annotatedTarget nvdb:tv3576 ;
+  rdfs:comment "GDF noTrafficSigns sameAs NVDB skiltet.nei"@en
+] .
+
+
+###  http://rdf.vegdata.no/nvdb/nvdb-owl#tv3577
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource gdf:VAL_XC_1 ;
+  owl:annotatedProperty owl:sameAs ;
+  owl:annotatedTarget nvdb:tv3577 ;
+  rdfs:comment "GDF pedestrianCrossingPriority.pedestriansOverRoadTraffic sameAs NVDB lysregulert.nei"@en
+] .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
