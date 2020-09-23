@@ -81,46 +81,6 @@ gdf:FSC_7290_211 rdf:type owl:Class ;
                  owl:equivalentClass nvdb:vot103 .
 
 
-###  http://rdf.vegdata.no/nvdb/lrs_nvdb_gdf#PedestrianCrossing_level_streetLevelCrossing
-:PedestrianCrossing_level_streetLevelCrossing rdf:type owl:Class ;
-                                              owl:equivalentClass nvdb:vot174 ;
-                                              rdfs:subClassOf gdf:FC_7240 ,
-                                                              [ rdf:type owl:Restriction ;
-                                                                owl:onProperty gdf:OTP_XD ;
-                                                                owl:hasValue gdf:VAL_XD_1
-                                                              ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :PedestrianCrossing_level_streetLevelCrossing ;
-   owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget [ rdf:type owl:Restriction ;
-                         owl:onProperty gdf:OTP_XD ;
-                         owl:hasValue gdf:VAL_XD_1
-                       ] ;
-   rdfs:comment "All NVDB Gangfelt are GDF PedestrianCrossing.level.streetLevelCrossing"@en
- ] .
-
-
-###  http://rdf.vegdata.no/nvdb/lrs_nvdb_gdf#PedestrianCrossing_signage_passiveTrafficSigns
-:PedestrianCrossing_signage_passiveTrafficSigns rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                             owl:onProperty nvdb:et2033 ;
-                                                                                             owl:hasValue nvdb:tv3538
-                                                                                           ]
-                                                                                           [ rdf:type owl:Restriction ;
-                                                                                             owl:onProperty nvdb:et2034 ;
-                                                                                             owl:hasValue nvdb:tv3539
-                                                                                           ]
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf gdf:FC_7240 ,
-                                                                [ rdf:type owl:Restriction ;
-                                                                  owl:onProperty gdf:OTP_XB ;
-                                                                  owl:hasValue gdf:VAL_XB_1
-                                                                ] .
-
-
 ###  http://rdf.vegdata.no/nvdb/lrs_nvdb_gdf#Sandbox
 :Sandbox rdf:type owl:Class .
 
